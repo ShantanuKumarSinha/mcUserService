@@ -11,10 +11,14 @@ import java.util.function.Function;
 
 @Repository
 public interface UserRepository extends JpaRepository<Users, Long> {
-    Users save(Users user);
+    @Override
+    <S extends Users> S save(S entity);
 
     @Override
     Optional<Users> findById(Long id);
+
+    @Override
+    <S extends Users, R> R findBy(Example<S> example, Function<FluentQuery.FetchableFluentQuery<S>, R> queryFunction);
 
     Optional<Users> findByEmail(String email);
 }
