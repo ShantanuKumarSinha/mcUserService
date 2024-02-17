@@ -4,9 +4,8 @@ import dev.shann.mcuserservice.DTO.AuthenticateUserDTO;
 import dev.shann.mcuserservice.DTO.CreateUserDTO;
 import dev.shann.mcuserservice.model.Users;
 import dev.shann.mcuserservice.repository.UserRepository;
-import org.springframework.stereotype.Service;
 
-@Service
+
 public class UserService {
 
     UserRepository userRepository;

@@ -457,7 +457,7 @@ atlassian-ide-plugin.xml
 # Cursive Clojure plugin
 .idea/replstate.xml
 
-# SonarLint plugin
+# SonarLint plugins
 .idea/sonarlint/
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
@@ -471,4 +471,5 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+.idea/dbnavigator.xml
 
