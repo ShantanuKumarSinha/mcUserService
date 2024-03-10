@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/model/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/EmailNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +30,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ShantanuKumarSinha"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ShantanuKumarSinha&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -69,14 +70,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.McuserserviceApplication.executor": "Run",
+    "JUnit.McUserServiceTest.executor": "Run",
+    "JUnit.McUserServiceTest.shouldAuthenticate.executor": "Run",
+    "JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate.executor": "Run",
+    "JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser.executor": "Run",
     "Maven.mcuserservice [clean].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "test/unit-test",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/shantanukumar/IdeaProjects/mcuserservice",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings"
   }
@@ -94,7 +99,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser">
     <configuration name="McuserserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McuserserviceApplication" />
       <module name="mcuserservice" />
@@ -108,9 +113,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="McUserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mcuserservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="McUserServiceTest.shouldAuthenticate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mcuserservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceTest" />
+      <option name="METHOD_NAME" value="shouldAuthenticate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="McUserServiceTest.shouldNotBeAbleToAuthenticate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mcuserservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToAuthenticate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="McUserServiceTest.shouldNotBeAbleToCreateNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mcuserservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToCreateNewUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.McuserserviceApplication" />
+        <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser" />
+        <item itemvalue="JUnit.McUserServiceTest" />
+        <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate" />
+        <item itemvalue="JUnit.McUserServiceTest.shouldAuthenticate" />
         <item itemvalue="Application.McuserserviceApplication" />
       </list>
     </recent_temporary>
@@ -169,18 +240,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java</url>
-          <line>21</line>
+          <line>22</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/controller/UserController.java</url>
           <line>23</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceTest.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

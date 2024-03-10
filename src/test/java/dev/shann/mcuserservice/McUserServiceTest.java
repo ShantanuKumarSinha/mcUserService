@@ -1,18 +1,22 @@
 package dev.shann.mcuserservice;
 
+import dev.shann.mcuserservice.DTO.AuthenticateUserDTO;
 import dev.shann.mcuserservice.DTO.CreateUserDTO;
 import dev.shann.mcuserservice.model.Users;
 import dev.shann.mcuserservice.repository.UserRepository;
 import dev.shann.mcuserservice.service.UserService;
-import org.assertj.core.api.ObjectAssert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.ArgumentCaptor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.Optional;
+
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -26,18 +30,45 @@ class McUserServiceTest {
     UserRepository userRepository;
 
     @Test
-    void shouldCreateNewUser(){
+    void shouldCreateNewUser() {
         when(userRepository.save(getUser())).thenReturn(getUser().toBuilder().id(1L).build());
         var user = userService.createUser(createUserDTO());
         assertThat(user).isNotNull();
         assertThat(user).isEqualTo(getUser().toBuilder().id(1L).build());
     }
 
-    private Users getUser(){
+    @Test
+    void shouldNotBeAbleToCreateNewUser() {
+        when(userRepository.save(getUser())).thenReturn(any(Users.class));
+        var user = userService.createUser(createUserDTO());
+        assertThat(user).isNull();
+    }
+
+    @Test
+    void shouldAuthenticate() {
+        when(userRepository.findByEmail(anyString())).thenReturn(Optional.of(getUser().toBuilder().id(1L).build()));
+        var user = userService.authenticate(authenticateUserDTO());
+        assertThat(user).isNotNull();
+        assertThat(user).isEqualTo(getUser().toBuilder().id(1L).build());
+    }
+
+    @Test
+    void shouldNotBeAbleToAuthenticate() {
+        when(userRepository.findByEmail(anyString())).thenReturn(Optional.ofNullable(any(Users.class)));
+        var exception = Assertions.assertThrows(RuntimeException.class, () -> userService.authenticate(authenticateUserDTO()));
+
+        assertThat(exception).isNotNull().isInstanceOf(RuntimeException.class);
+    }
+
+    private Users getUser() {
         return Users.builder().email("shan.raj93@gmail.com").password("Test@123").build();
     }
 
-    private CreateUserDTO createUserDTO(){
+    private CreateUserDTO createUserDTO() {
         return new CreateUserDTO(getUser());
+    }
+
+    private AuthenticateUserDTO authenticateUserDTO() {
+        return new AuthenticateUserDTO("test@test.com", "Testing@123");
     }
 }
