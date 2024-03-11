@@ -2,7 +2,7 @@ package dev.shann.mcuserservice.service;
 
 import dev.shann.mcuserservice.DTO.AuthenticateUserDTO;
 import dev.shann.mcuserservice.DTO.CreateUserDTO;
-import dev.shann.mcuserservice.EmailNotFoundException;
+import dev.shann.mcuserservice.exceptions.EmailNotFoundException;
 import dev.shann.mcuserservice.model.Users;
 import dev.shann.mcuserservice.repository.UserRepository;
 
