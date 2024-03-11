@@ -1,4 +1,5 @@
-# This is a user service application
+#User Service
+## This is a user service application
 ## This is a client for EurekaServer mcEurekaServer along with mcProductService
 
 ### Add dependency tree using following scriot everytime you add a dependency to pom.xml
