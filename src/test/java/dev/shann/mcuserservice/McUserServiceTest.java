@@ -2,10 +2,10 @@ package dev.shann.mcuserservice;
 
 import dev.shann.mcuserservice.DTO.AuthenticateUserDTO;
 import dev.shann.mcuserservice.DTO.CreateUserDTO;
+import dev.shann.mcuserservice.exceptions.EmailNotFoundException;
 import dev.shann.mcuserservice.model.Users;
 import dev.shann.mcuserservice.repository.UserRepository;
 import dev.shann.mcuserservice.service.UserService;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -15,9 +15,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.Optional;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -55,9 +55,9 @@ class McUserServiceTest {
     @Test
     void shouldNotBeAbleToAuthenticate() {
         when(userRepository.findByEmail(anyString())).thenReturn(Optional.ofNullable(any(Users.class)));
-        var exception = Assertions.assertThrows(RuntimeException.class, () -> userService.authenticate(authenticateUserDTO()));
+        var exception = assertThrows(EmailNotFoundException.class, () -> userService.authenticate(authenticateUserDTO()));
 
-        assertThat(exception).isNotNull().isInstanceOf(RuntimeException.class);
+        assertThat(exception).isNotNull().isInstanceOf(EmailNotFoundException.class);
     }
 
     private Users getUser() {
