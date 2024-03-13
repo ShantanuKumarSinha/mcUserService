@@ -15,6 +15,6 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(value = {EmailNotFoundException.class})
     public ResponseEntity<Object> handleEmailNotFoundException(EmailNotFoundException emailNotFoundException, WebRequest webRequest){
-        return handleExceptionInternal(emailNotFoundException,"Email Not Found", new HttpHeaders(), HttpStatus.NOT_FOUND, webRequest);
+        return handleExceptionInternal(emailNotFoundException,emailNotFoundException.getMessage(), new HttpHeaders(), HttpStatus.NOT_FOUND, webRequest);
     }
 }
