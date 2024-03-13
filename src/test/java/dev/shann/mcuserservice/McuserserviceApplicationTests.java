@@ -27,7 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest(classes= McuserserviceApplication.class)
 @AutoConfigureMockMvc
-@TestPropertySource(locations = "file:/Users/shantanukumar/IdeaProjects/mcuserservice/src/test/java/resources/application-test.properties")
+@TestPropertySource(locations = "file:src/test/java/resources/application-test.properties")
 @ActiveProfiles("test")
 class McuserserviceApplicationTests {
     @Autowired
