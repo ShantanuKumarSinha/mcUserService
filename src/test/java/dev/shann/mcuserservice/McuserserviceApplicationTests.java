@@ -7,10 +7,12 @@ import dev.shann.mcuserservice.controller.UserController;
 import dev.shann.mcuserservice.model.Users;
 import dev.shann.mcuserservice.repository.UserRepository;
 import dev.shann.mcuserservice.service.UserService;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.TestPropertySource;
@@ -44,6 +46,14 @@ class McuserserviceApplicationTests {
 
     @Autowired
     private UserController userController;
+
+    @BeforeAll
+    static void setup(){
+        McuserserviceApplicationTests mcuserserviceApplicationTests = new McuserserviceApplicationTests();
+        ClassLoader classLoader = mcuserserviceApplicationTests.getClass().getClassLoader();
+        String sqlFile = "test-data.sql";
+        classLoader.getResourceAsStream(sqlFile);
+    }
 
     @Test
     void shouldCreateUser() throws Exception{
