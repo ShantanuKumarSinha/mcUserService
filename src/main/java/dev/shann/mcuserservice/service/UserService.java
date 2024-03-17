@@ -16,10 +16,10 @@ public class UserService {
     }
 
     public Users authenticate(AuthenticateUserDTO authenticateUserDTO){
-        return userRepository.findByEmail(authenticateUserDTO.email()).orElseThrow(EmailNotFoundException::new);
+        return userRepository.findByEmail(authenticateUserDTO.getEmail()).orElseThrow(EmailNotFoundException::new);
     }
 
     public Users createUser(CreateUserDTO createUserDTO){
-        return userRepository.save(createUserDTO.users());
+        return userRepository.save(createUserDTO.getUser());
     }
 }

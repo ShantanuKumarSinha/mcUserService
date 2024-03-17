@@ -58,7 +58,7 @@ class McuserserviceApplicationTests {
     @Test
     void shouldCreateUser() throws Exception{
         var jsonStringify = objectMapper.writeValueAsString(
-                new CreateUserDTO(Users.builder().email("test@test.com").password("Test@123").build()));
+                CreateUserDTO.builder().user(Users.builder().email("test@test.com").password("Test@123").build()).build());
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .post("http://user-service/users").contentType(MediaType.APPLICATION_JSON_VALUE)
                 .content(jsonStringify);
@@ -78,7 +78,7 @@ class McuserserviceApplicationTests {
     void shouldAuthenticateUser() throws Exception {
 
         var jsonStringify = objectMapper.writeValueAsString(
-                new AuthenticateUserDTO("test2@test.com","Test2@123"));
+                AuthenticateUserDTO.builder().email("test2@test.com").password("Test2@123").build());
 
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .post("http://user-service/users/authenticate")
@@ -95,7 +95,7 @@ class McuserserviceApplicationTests {
     void shouldNotBeAbleToAuthenticateUser() throws Exception {
 
         var jsonStringify = objectMapper.writeValueAsString(
-                new AuthenticateUserDTO("test3@test.com","Test3@123"));
+                AuthenticateUserDTO.builder().email("test3@test.com").password("Test3@123").build());
 
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .post("http://user-service/users/authenticate")

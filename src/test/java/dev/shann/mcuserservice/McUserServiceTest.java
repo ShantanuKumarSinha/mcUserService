@@ -65,10 +65,10 @@ class McUserServiceTest {
     }
 
     private CreateUserDTO createUserDTO() {
-        return new CreateUserDTO(getUser());
+        return CreateUserDTO.builder().user(getUser()).build();
     }
 
     private AuthenticateUserDTO authenticateUserDTO() {
-        return new AuthenticateUserDTO("test@test.com", "Testing@123");
+        return AuthenticateUserDTO.builder().email("test@test.com").password("Test@123").build();
     }
 }

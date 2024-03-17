@@ -1,7 +1,18 @@
 package dev.shann.mcuserservice.DTO;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import dev.shann.mcuserservice.model.Users;
 
-public record AuthenticateUserDTO(String email , String password) {
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class AuthenticateUserDTO {
+
+    String email;
+    String password;
+
 }
