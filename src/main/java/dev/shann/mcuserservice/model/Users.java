@@ -6,7 +6,6 @@ import org.hibernate.annotations.IdGeneratorType;
 
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
