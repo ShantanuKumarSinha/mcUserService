@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/pipeline.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/pipeline.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -23,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="technical/sonarqube" />
+        <entry key="$PROJECT_DIR$" value="test/unit-test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,39 +65,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.McuserserviceApplication.executor": "Run",
-    "JUnit.McUserControllerTest.executor": "Run",
-    "JUnit.McUserControllerTest.shouldBeAbleToAuthenticateUser.executor": "Run",
-    "JUnit.McUserControllerTest.shouldCreateNewUser.executor": "Run",
-    "JUnit.McUserControllerTest.shouldNotBeAbleToCreateNewUser.executor": "Run",
-    "JUnit.McUserServiceTest.executor": "Run",
-    "JUnit.McUserServiceTest.shouldAuthenticate.executor": "Run",
-    "JUnit.McUserServiceTest.shouldCreateNewUser.executor": "Run",
-    "JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate.executor": "Run",
-    "JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser.executor": "Run",
-    "JUnit.McuserserviceApplicationTests.executor": "Run",
-    "JUnit.McuserserviceApplicationTests.shouldAuthenticateUser.executor": "Run",
-    "JUnit.McuserserviceApplicationTests.shouldNotBeAbleToAuthenticateUser.executor": "Run",
-    "JUnit.McuserserviceApplicationTests.testUserAuthentication.executor": "Run",
-    "JUnit.McuserserviceApplicationTests.testUserCreation.executor": "Run",
-    "Maven.mcuserservice [clean].executor": "Run",
-    "Maven.mcuserservice [compile].executor": "Run",
-    "Maven.mcuserservice [install].executor": "Run",
-    "Maven.mcuserservice [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor": "Run",
-    "Maven.mcuserservice [org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.preview.features.used": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/java/dev/shann/mcuserservice",
-    "last_opened_file_path": "/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/resources",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.McuserserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserControllerTest.shouldBeAbleToAuthenticateUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserControllerTest.shouldCreateNewUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserControllerTest.shouldNotBeAbleToCreateNewUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserServiceTest.shouldAuthenticate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserServiceTest.shouldCreateNewUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McuserserviceApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McuserserviceApplicationTests.shouldAuthenticateUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McuserserviceApplicationTests.shouldNotBeAbleToAuthenticateUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McuserserviceApplicationTests.testUserAuthentication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McuserserviceApplicationTests.testUserCreation.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mcuserservice [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mcuserservice [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mcuserservice [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mcuserservice [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mcuserservice [org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;technical/sonarqube&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/java/dev/shann/mcuserservice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;google-java-format.settings&quot;
   }
 }]]></component>
   <component name="RecentsManager">
@@ -207,10 +209,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.McuserserviceApplication" />
-        <item itemvalue="Application.McuserserviceApplication" />
         <item itemvalue="JUnit.McuserserviceApplicationTests" />
         <item itemvalue="JUnit.McuserserviceApplicationTests.shouldAuthenticateUser" />
         <item itemvalue="JUnit.McuserserviceApplicationTests.shouldNotBeAbleToAuthenticateUser" />
+        <item itemvalue="JUnit.McuserserviceApplicationTests" />
       </list>
     </recent_temporary>
   </component>
