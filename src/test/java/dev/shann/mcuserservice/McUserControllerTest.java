@@ -67,19 +67,13 @@ class McUserControllerTest {
         return Users.builder().id(1L).email("shan.raj93@gmail.com").password("Test@123").build();
     }
     private CreateUserDTO createUserDTO() {
-        return  CreateUserDTO.builder()
-                .user(Users.builder()
-                        .email("shan.raj93@gmail.com")
-                        .password("Test@123")
-                        .build())
-                .build();
+        return  new CreateUserDTO (Users.builder()
+                .email("shan.raj93@gmail.com")
+                .password("Test@123")
+                .build());
     }
 
     private AuthenticateUserDTO authenticateUserDTO() {
-        return  AuthenticateUserDTO
-                .builder()
-                .email("test@test.com")
-                .password("Testing@123")
-                .build();
+        return  new AuthenticateUserDTO("test@test.com","Testing@123");
     }
 }
