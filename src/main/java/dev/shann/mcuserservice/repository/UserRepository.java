@@ -1,22 +1,19 @@
 package dev.shann.mcuserservice.repository;
 
-import dev.shann.mcuserservice.model.Users;
-import org.springframework.data.domain.Example;
+import dev.shann.mcuserservice.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.query.FluentQuery;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
-import java.util.function.Function;
 
 @Repository
-public interface UserRepository extends JpaRepository<Users, Long> {
+public interface UserRepository extends JpaRepository<UserEntity, Long> {
     @Override
-    Users save(Users users);
+    UserEntity save(UserEntity users);
 
     @Override
-    Optional<Users> findById(Long id);
+    Optional<UserEntity> findById(Long id);
 
 
-    Optional<Users> findByEmail(String email);
+    Optional<UserEntity> findByEmail(String email);
 }
