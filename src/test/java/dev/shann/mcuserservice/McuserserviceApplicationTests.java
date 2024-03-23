@@ -1,8 +1,8 @@
 package dev.shann.mcuserservice;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dev.shann.mcuserservice.DTO.AuthenticateUserDTO;
-import dev.shann.mcuserservice.DTO.CreateUserDTO;
+import dev.shann.mcuserservice.dto.AuthenticateUserDTO;
+import dev.shann.mcuserservice.dto.CreateUserDTO;
 import dev.shann.mcuserservice.controller.UserController;
 import dev.shann.mcuserservice.model.Users;
 import dev.shann.mcuserservice.repository.UserRepository;
@@ -18,7 +18,6 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.SqlGroup;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 

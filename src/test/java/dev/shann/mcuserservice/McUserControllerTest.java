@@ -1,11 +1,10 @@
 package dev.shann.mcuserservice;
 
-import dev.shann.mcuserservice.DTO.AuthenticateUserDTO;
-import dev.shann.mcuserservice.DTO.CreateUserDTO;
+import dev.shann.mcuserservice.dto.AuthenticateUserDTO;
+import dev.shann.mcuserservice.dto.CreateUserDTO;
 import dev.shann.mcuserservice.controller.UserController;
 import dev.shann.mcuserservice.model.Users;
 import dev.shann.mcuserservice.service.UserService;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

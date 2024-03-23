@@ -1,7 +1,7 @@
 package dev.shann.mcuserservice.service;
 
-import dev.shann.mcuserservice.DTO.AuthenticateUserDTO;
-import dev.shann.mcuserservice.DTO.CreateUserDTO;
+import dev.shann.mcuserservice.dto.AuthenticateUserDTO;
+import dev.shann.mcuserservice.dto.CreateUserDTO;
 import dev.shann.mcuserservice.entity.UserEntity;
 import dev.shann.mcuserservice.exceptions.EmailNotFoundException;
 import dev.shann.mcuserservice.model.Users;
@@ -20,12 +20,13 @@ public class UserService {
     }
 
     public Users authenticate(AuthenticateUserDTO authenticateUserDTO){
-        return modelMapper.map(userRepository.findByEmail(authenticateUserDTO.email())
-                .orElseThrow(EmailNotFoundException::new),Users.class);
+        var userEntitiy = userRepository.findByEmail(authenticateUserDTO.email())
+                .orElseThrow(EmailNotFoundException::new);
+        return modelMapper.map(userEntitiy,Users.class);
     }
 
     public Users createUser(CreateUserDTO createUserDTO){
-        return modelMapper.map(userRepository
-                .save(modelMapper.map(createUserDTO.users(), UserEntity.class)),Users.class);
+        var userEntity = modelMapper.map(createUserDTO.users(), UserEntity.class);
+       return modelMapper.map(userRepository.save(userEntity),Users.class);
     }
 }
