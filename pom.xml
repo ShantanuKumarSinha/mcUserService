@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>dev.shann</groupId>
-	<artifactId>mcuserservice</artifactId>
+	<artifactId>mcUserService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mcuserservice</name>
+	<name>mcUserService</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>21</java.version>

@@ -1,7 +1,7 @@
 package dev.shann.mcuserservice.controller;
 
-import dev.shann.mcuserservice.DTO.AuthenticateUserDTO;
-import dev.shann.mcuserservice.DTO.CreateUserDTO;
+import dev.shann.mcuserservice.dto.AuthenticateUserDTO;
+import dev.shann.mcuserservice.dto.CreateUserDTO;
 import dev.shann.mcuserservice.model.Users;
 import dev.shann.mcuserservice.service.UserService;
 import org.springframework.http.HttpStatus;
