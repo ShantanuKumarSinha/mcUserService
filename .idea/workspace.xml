@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/DTO/AuthenticateUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/dto/AuthenticateUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/DTO/CreateUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/dto/CreateUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/McuserserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/McuserserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McuserserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McuserserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcuserservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mcuserservice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/dto/AuthenticateUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/dto/AuthenticateUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/dto/CreateUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/dto/CreateUserDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,8 @@
     "Maven.mcuserservice [org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "technical/java-21",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "ignore.preview.features.used": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/java/dev/shann/mcuserservice",
@@ -103,7 +104,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "google-java-format.settings"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
 }]]></component>
   <component name="RecentsManager">

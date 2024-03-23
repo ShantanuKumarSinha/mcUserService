@@ -1,4 +1,4 @@
-package dev.shann.mcuserservice.dto;
+package dev.shann.mcuserservice.DTO;
 
 
 import dev.shann.mcuserservice.model.Users;
