@@ -46,7 +46,7 @@ class McUserServiceTest {
         assertThat(user).isEqualTo(getUser().toBuilder().id(1L).build());
     }
 
-   @Disabled
+   @Disabled("https://github.com/ShantanuKumarSinha/mcuserservice/issues/25")
     @Test
     void shouldNotBeAbleToCreateNewUser() {
         when(modelMapper.map(getUser(), UserEntity.class)).thenReturn(getUserEntity());
