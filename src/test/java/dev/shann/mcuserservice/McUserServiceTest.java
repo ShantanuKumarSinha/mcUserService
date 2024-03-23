@@ -7,6 +7,7 @@ import dev.shann.mcuserservice.exceptions.EmailNotFoundException;
 import dev.shann.mcuserservice.model.Users;
 import dev.shann.mcuserservice.repository.UserRepository;
 import dev.shann.mcuserservice.service.UserService;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -45,16 +46,17 @@ class McUserServiceTest {
         assertThat(user).isEqualTo(getUser().toBuilder().id(1L).build());
     }
 
-//    @Test
-//    void shouldNotBeAbleToCreateNewUser() {
-//        when(modelMapper.map(getUser(), UserEntity.class)).thenReturn(getUserEntity());
-//        when(userRepository.save(getUserEntity()))
-//                .thenReturn(any(UserEntity.class));
-//        when(modelMapper.map(getUserEntityWithId(),Users.class))
-//                .thenReturn(any(Users.class));
-//        var user = userService.createUser(createUserDTO());
-//        assertThat(user).isNull();
-//    }
+   @Disabled
+    @Test
+    void shouldNotBeAbleToCreateNewUser() {
+        when(modelMapper.map(getUser(), UserEntity.class)).thenReturn(getUserEntity());
+        when(userRepository.save(getUserEntity()))
+                .thenReturn(any(UserEntity.class));
+        when(modelMapper.map(getUserEntityWithId(),Users.class))
+                .thenReturn(any(Users.class));
+        var user = userService.createUser(createUserDTO());
+        assertThat(user).isNull();
+    }
 
     @Test
     void shouldAuthenticate() {
