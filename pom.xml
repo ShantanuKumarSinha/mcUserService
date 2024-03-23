@@ -21,6 +21,16 @@
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 		<sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../target/jacoco.exec</sonar.coverage.jacoco.xmlReportPaths>
 		<sonar.language>java</sonar.language>
+		<!-- SonarQube server URL -->
+		<sonar.host.url>http://localhost:9000</sonar.host.url>
+		<!-- SonarQube project key -->
+		<sonar.projectKey>mcUserService</sonar.projectKey>
+		<!-- SonarQube project name -->
+		<sonar.projectName>mcUserService</sonar.projectName>
+		<!-- SonarQube project version -->
+		<sonar.projectVersion>1.0</sonar.projectVersion>
+		<!-- Authentication token -->
+		<sonar.login>sqp_892d1c0d742f5fcf3055306bfbe919d78c380af8</sonar.login>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -136,7 +146,7 @@
 			<plugin>
 				<groupId>org.sonarsource.scanner.maven</groupId>
 				<artifactId>sonar-maven-plugin</artifactId>
-				<version> 3.8.0.2131</version>
+				<version> 3.8.0.x2131</version>
 			</plugin>
 
 		</plugins>
