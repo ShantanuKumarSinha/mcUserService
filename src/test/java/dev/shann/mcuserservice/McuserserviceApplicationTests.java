@@ -1,8 +1,8 @@
 package dev.shann.mcuserservice;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dev.shann.mcuserservice.dto.AuthenticateUserDTO;
-import dev.shann.mcuserservice.dto.CreateUserDTO;
+import dev.shann.mcuserservice.dto1.AuthenticateUserDTO;
+import dev.shann.mcuserservice.dto1.CreateUserDTO;
 import dev.shann.mcuserservice.controller.UserController;
 import dev.shann.mcuserservice.model.Users;
 import dev.shann.mcuserservice.repository.UserRepository;
