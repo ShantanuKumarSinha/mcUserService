@@ -3,8 +3,8 @@ package dev.shann.mcuserservice;
 import dev.shann.mcuserservice.dto.AuthenticateUserDTO;
 import dev.shann.mcuserservice.dto.CreateUserDTO;
 import dev.shann.mcuserservice.entity.UserEntity;
-import dev.shann.mcuserservice.exceptions.handler.EmailNotFoundException;
-import dev.shann.mcuserservice.model.Users;
+import dev.shann.mcuserservice.exceptions.EmailNotFoundException;
+import dev.shann.mcuserservice.model.User;
 import dev.shann.mcuserservice.repository.UserRepository;
 import dev.shann.mcuserservice.service.UserService;
 import org.junit.jupiter.api.Disabled;
@@ -39,7 +39,7 @@ class McUserServiceTest {
         when(modelMapper.map(getUser(), UserEntity.class)).thenReturn(getUserEntity());
         when(userRepository.save(getUserEntity()))
                 .thenReturn(getUserEntityWithId());
-        when(modelMapper.map(getUserEntityWithId(),Users.class))
+        when(modelMapper.map(getUserEntityWithId(), User.class))
                 .thenReturn(getUserWithId());
         var user = userService.createUser(createUserDTO());
         assertThat(user).isNotNull();
@@ -52,8 +52,8 @@ class McUserServiceTest {
         when(modelMapper.map(getUser(), UserEntity.class)).thenReturn(getUserEntity());
         when(userRepository.save(getUserEntity()))
                 .thenReturn(any(UserEntity.class));
-        when(modelMapper.map(getUserEntityWithId(),Users.class))
-                .thenReturn(any(Users.class));
+        when(modelMapper.map(getUserEntityWithId(), User.class))
+                .thenReturn(any(User.class));
         var user = userService.createUser(createUserDTO());
         assertThat(user).isNull();
     }
@@ -61,7 +61,7 @@ class McUserServiceTest {
     @Test
     void shouldAuthenticate() {
         when(userRepository.findByEmail(anyString())).thenReturn(Optional.of(getUserEntityWithId()));
-        when(modelMapper.map(getUserEntityWithId(),Users.class)).thenReturn(getUserWithId());
+        when(modelMapper.map(getUserEntityWithId(), User.class)).thenReturn(getUserWithId());
         var user = userService.authenticate(authenticateUserDTO());
         assertThat(user).isNotNull();
         assertThat(user).isEqualTo(getUser().toBuilder().id(1L).build());
@@ -82,12 +82,12 @@ class McUserServiceTest {
         return UserEntity.builder().id(1L).email("shan.raj93@gmail.com").password("Test@123").build();
     }
 
-    private Users getUser() {
-        return Users.builder().email("shan.raj93@gmail.com").password("Test@123").build();
+    private User getUser() {
+        return User.builder().email("shan.raj93@gmail.com").password("Test@123").build();
     }
 
-    private Users getUserWithId() {
-        return Users.builder().id(1L).email("shan.raj93@gmail.com").password("Test@123").build();
+    private User getUserWithId() {
+        return User.builder().id(1L).email("shan.raj93@gmail.com").password("Test@123").build();
     }
     private CreateUserDTO createUserDTO() {
         return new CreateUserDTO(getUser());

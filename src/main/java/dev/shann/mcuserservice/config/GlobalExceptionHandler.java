@@ -1,6 +1,6 @@
 package dev.shann.mcuserservice.config;
 
-import dev.shann.mcuserservice.exceptions.handler.EmailNotFoundException;
+import dev.shann.mcuserservice.exceptions.EmailNotFoundException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

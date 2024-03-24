@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import dev.shann.mcuserservice.dto.AuthenticateUserDTO;
 import dev.shann.mcuserservice.dto.CreateUserDTO;
 import dev.shann.mcuserservice.controller.UserController;
-import dev.shann.mcuserservice.model.Users;
+import dev.shann.mcuserservice.model.User;
 import dev.shann.mcuserservice.repository.UserRepository;
 import dev.shann.mcuserservice.service.UserService;
 import org.junit.jupiter.api.BeforeAll;
@@ -56,16 +56,16 @@ class McUserServiceApplicationTests {
     @Test
     void shouldCreateUser() throws Exception{
         var jsonStringify = objectMapper.writeValueAsString(
-                new CreateUserDTO(Users.builder().email("test@test.com").password("Test@123").build()));
+                new CreateUserDTO(User.builder().email("test@test.com").password("Test@123").build()));
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .post("http://user-service/users").contentType(MediaType.APPLICATION_JSON_VALUE)
                 .content(jsonStringify);
         var result = mockMvc.perform(requestBuilder).andExpect(status().isCreated()).andReturn();
 
-        var user = objectMapper.readValue(result.getResponse().getContentAsString(),Users.class);
+        var user = objectMapper.readValue(result.getResponse().getContentAsString(), User.class);
 
         assertSoftly(softly -> softly.assertThat(user)
-                .extracting(Users::getId,Users::getEmail,Users::getPassword)
+                .extracting(User::getId, User::getEmail, User::getPassword)
                 .contains(1L,"test@test.com","Test@123"));
     }
 

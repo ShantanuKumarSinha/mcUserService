@@ -1,6 +1,6 @@
 package dev.shann.mcuserservice.dto;
 
-import dev.shann.mcuserservice.model.Users;
+import dev.shann.mcuserservice.model.User;
 
-public record CreateUserDTO(Users users) {
+public record CreateUserDTO(User users) {
 }

@@ -3,8 +3,8 @@ package dev.shann.mcuserservice.service;
 import dev.shann.mcuserservice.dto.AuthenticateUserDTO;
 import dev.shann.mcuserservice.dto.CreateUserDTO;
 import dev.shann.mcuserservice.entity.UserEntity;
-import dev.shann.mcuserservice.exceptions.handler.EmailNotFoundException;
-import dev.shann.mcuserservice.model.Users;
+import dev.shann.mcuserservice.exceptions.EmailNotFoundException;
+import dev.shann.mcuserservice.model.User;
 import dev.shann.mcuserservice.repository.UserRepository;
 import org.modelmapper.ModelMapper;
 
@@ -19,14 +19,14 @@ public class UserService {
         this.modelMapper = modelMapper;
     }
 
-    public Users authenticate(AuthenticateUserDTO authenticateUserDTO){
+    public User authenticate(AuthenticateUserDTO authenticateUserDTO){
         var userEntitiy = userRepository.findByEmail(authenticateUserDTO.email())
                 .orElseThrow(EmailNotFoundException::new);
-        return modelMapper.map(userEntitiy,Users.class);
+        return modelMapper.map(userEntitiy, User.class);
     }
 
-    public Users createUser(CreateUserDTO createUserDTO){
+    public User createUser(CreateUserDTO createUserDTO){
         var userEntity = modelMapper.map(createUserDTO.users(), UserEntity.class);
-       return modelMapper.map(userRepository.save(userEntity),Users.class);
+       return modelMapper.map(userRepository.save(userEntity), User.class);
     }
 }

@@ -3,7 +3,7 @@ package dev.shann.mcuserservice;
 import dev.shann.mcuserservice.dto.AuthenticateUserDTO;
 import dev.shann.mcuserservice.dto.CreateUserDTO;
 import dev.shann.mcuserservice.controller.UserController;
-import dev.shann.mcuserservice.model.Users;
+import dev.shann.mcuserservice.model.User;
 import dev.shann.mcuserservice.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -37,7 +37,7 @@ class McUserControllerTest {
 
     @Test
     void shouldNotBeAbleToCreateNewUser(){
-        when(userService.createUser(createUserDTO())).thenReturn(any(Users.class));
+        when(userService.createUser(createUserDTO())).thenReturn(any(User.class));
         var response = userController.createUser(createUserDTO());
         assertThat(response).isNotNull();
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.CREATED);
@@ -55,18 +55,18 @@ class McUserControllerTest {
     }
     @Test
     void shouldNotBeAbleToAuthenticateUser(){
-        when(userService.authenticate(authenticateUserDTO())).thenReturn(any(Users.class));
+        when(userService.authenticate(authenticateUserDTO())).thenReturn(any(User.class));
         var response = userController.authenticate(authenticateUserDTO());
         assertThat(response).isNotNull();
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(response.getBody()).isFalse();
     }
 
-    private Users getUser() {
-        return Users.builder().id(1L).email("shan.raj93@gmail.com").password("Test@123").build();
+    private User getUser() {
+        return User.builder().id(1L).email("shan.raj93@gmail.com").password("Test@123").build();
     }
     private CreateUserDTO createUserDTO() {
-        return  new CreateUserDTO (Users.builder()
+        return  new CreateUserDTO (User.builder()
                 .email("shan.raj93@gmail.com")
                 .password("Test@123")
                 .build());
