@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/config/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/config/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/dto/CreateUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/dto/CreateUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +51,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -70,43 +63,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.McUserServiceApplication.executor": "Run",
-    "Application.McuserserviceApplication.executor": "Run",
-    "JUnit.McUserControllerTest.executor": "Run",
-    "JUnit.McUserControllerTest.shouldBeAbleToAuthenticateUser.executor": "Run",
-    "JUnit.McUserControllerTest.shouldCreateNewUser.executor": "Run",
-    "JUnit.McUserControllerTest.shouldNotBeAbleToCreateNewUser.executor": "Run",
-    "JUnit.McUserServiceTest.executor": "Run",
-    "JUnit.McUserServiceTest.shouldAuthenticate.executor": "Run",
-    "JUnit.McUserServiceTest.shouldCreateNewUser.executor": "Run",
-    "JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate.executor": "Debug",
-    "JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser.executor": "Debug",
-    "JUnit.McuserserviceApplicationTests.executor": "Run",
-    "JUnit.McuserserviceApplicationTests.shouldAuthenticateUser.executor": "Run",
-    "JUnit.McuserserviceApplicationTests.shouldNotBeAbleToAuthenticateUser.executor": "Run",
-    "JUnit.McuserserviceApplicationTests.testUserAuthentication.executor": "Run",
-    "JUnit.McuserserviceApplicationTests.testUserCreation.executor": "Run",
-    "Maven.mcuserservice [clean].executor": "Run",
-    "Maven.mcuserservice [compile].executor": "Run",
-    "Maven.mcuserservice [install].executor": "Run",
-    "Maven.mcuserservice [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor": "Run",
-    "Maven.mcuserservice [org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.preview.features.used": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/java/dev/shann/mcuserservice",
-    "last_opened_file_path": "/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/resources",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.McUserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.McuserserviceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserControllerTest.shouldBeAbleToAuthenticateUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserControllerTest.shouldCreateNewUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserControllerTest.shouldNotBeAbleToCreateNewUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserServiceTest.shouldAuthenticate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserServiceTest.shouldCreateNewUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.McuserserviceApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McuserserviceApplicationTests.shouldAuthenticateUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McuserserviceApplicationTests.shouldNotBeAbleToAuthenticateUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McuserserviceApplicationTests.testUserAuthentication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.McuserserviceApplicationTests.testUserCreation.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mcuserservice [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mcuserservice [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mcuserservice [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mcuserservice [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mcuserservice [org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/java/dev/shann/mcuserservice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dev.shann.mcuserservice.model" />
@@ -126,7 +119,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.McUserServiceApplication">
+  <component name="RunManager" selected="JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate (1)">
     <configuration name="McUserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceApplication" />
       <module name="mcUserService" />
@@ -151,6 +144,22 @@
       <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
       <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="McUserServiceTest.shouldNotBeAbleToAuthenticate (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mcUserService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToAuthenticate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,12 +198,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.McUserServiceApplication" />
+      <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate (1)" />
       <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate" />
       <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser" />
       <item itemvalue="JUnit.McUserServiceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate (1)" />
         <item itemvalue="Application.McUserServiceApplication" />
         <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser" />
         <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate" />
