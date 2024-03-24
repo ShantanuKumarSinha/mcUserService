@@ -70,7 +70,8 @@ class McUserServiceTest {
     @Test
     void shouldNotBeAbleToAuthenticate() {
         when(userRepository.findByEmail(anyString())).thenReturn(Optional.ofNullable(any(UserEntity.class)));
-        assertThrows(EmailNotFoundException.class, () -> userService.authenticate(authenticateUserDTO()));
+        var exception = assertThrows(EmailNotFoundException.class, () -> userService.authenticate(authenticateUserDTO()));
+        assertThat(exception).isNotNull().isInstanceOf(EmailNotFoundException.class);
     }
 
     private UserEntity getUserEntity() {
