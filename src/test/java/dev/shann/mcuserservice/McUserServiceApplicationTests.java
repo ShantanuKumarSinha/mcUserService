@@ -25,11 +25,11 @@ import static org.assertj.core.api.SoftAssertions.assertSoftly;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
-@SpringBootTest(classes= McuserserviceApplication.class)
+@SpringBootTest(classes= McUserServiceApplication.class)
 @AutoConfigureMockMvc
 @TestPropertySource(locations = "file:src/test/java/resources/application-test.properties")
 @ActiveProfiles("test")
-class McuserserviceApplicationTests {
+class McUserServiceApplicationTests {
     @Autowired
     MockMvc mockMvc;
 
@@ -47,7 +47,7 @@ class McuserserviceApplicationTests {
 
     @BeforeAll
     static void setup(){
-        McuserserviceApplicationTests mcuserserviceApplicationTests = new McuserserviceApplicationTests();
+        McUserServiceApplicationTests mcuserserviceApplicationTests = new McUserServiceApplicationTests();
         ClassLoader classLoader = mcuserserviceApplicationTests.getClass().getClassLoader();
         String sqlFile = "test-data.sql";
         classLoader.getResourceAsStream(sqlFile);
