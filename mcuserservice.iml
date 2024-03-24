@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
-  <component name="AdditionalModuleElements">
-    <content url="file://$MODULE_DIR$" dumb="true">
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/0" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/1" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/4" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/5" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/a/3" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/b" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/c" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/d" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/0" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/1" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/4" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/5" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/a/3" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/b" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/c" />
-      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/d" />
-    </content>
-  </component>
   <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="a8123a01-d8fb-4e1a-b1e9-194094a928b0" />
+    <option name="uniqueId" value="2dc2f7c7-8113-4e43-91cc-8b6328487db2" />
   </component>
 </module>

@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class McuserserviceApplication {
+public class McUserServiceApplication {
 
 	@Bean
 	public UserService userService(UserRepository userRepository) {
@@ -18,7 +18,7 @@ public class McuserserviceApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(McuserserviceApplication.class, args);
+		SpringApplication.run(McUserServiceApplication.class, args);
 	}
 
 }
