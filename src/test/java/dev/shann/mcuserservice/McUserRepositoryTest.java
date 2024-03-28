@@ -3,7 +3,6 @@ package dev.shann.mcuserservice;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import dev.shann.mcuserservice.entity.UserEntity;
 import dev.shann.mcuserservice.repository.UserRepository;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
