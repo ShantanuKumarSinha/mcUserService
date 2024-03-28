@@ -49,13 +49,13 @@ class McUserServiceTest {
     @Test
     void shouldNotBeAbleToCreateNewUser() {
     when(modelMapper.map(getUser(), UserEntity.class))
-        .thenReturn(UserEntity.builder().build());
-        when(userRepository.save(UserEntity.builder().build()))
-                .thenReturn(UserEntity.builder().build());
-        when(modelMapper.map(UserEntity.builder().build(), User.class))
-                .thenReturn(User.builder().build());
+        .thenReturn(getUserEntity());
+        when(userRepository.save(getUserEntity()))
+                .thenReturn(null);
+        when(modelMapper.map(null, User.class))
+                .thenReturn(null);
         var user = userService.createUser(createUserDTO());
-        assertThat(user).isEqualTo(User.builder().build());
+        assertThat(user).isEqualTo(null);
     }
 
     @Test
