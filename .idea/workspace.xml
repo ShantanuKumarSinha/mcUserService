@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/pipeline.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/pipeline.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
