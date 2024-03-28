@@ -55,7 +55,7 @@ class McUserServiceTest {
         when(modelMapper.map(null, User.class))
                 .thenReturn(null);
         var user = userService.createUser(createUserDTO());
-        assertThat(user).isEqualTo(null);
+    assertThat(user).isNull();
     }
 
     @Test
