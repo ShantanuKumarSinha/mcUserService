@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +73,12 @@
     "JUnit.McUserControllerTest.shouldBeAbleToAuthenticateUser.executor": "Run",
     "JUnit.McUserControllerTest.shouldCreateNewUser.executor": "Run",
     "JUnit.McUserControllerTest.shouldNotBeAbleToCreateNewUser.executor": "Run",
+    "JUnit.McUserRepositoryTest.executor": "Run",
+    "JUnit.McUserRepositoryTest.shouldAuthenticateUser.executor": "Run",
+    "JUnit.McUserRepositoryTest.shouldCreateNewUser.executor": "Run",
+    "JUnit.McUserRepositoryTest.shouldNotAuthenticateUser.executor": "Run",
+    "JUnit.McUserServiceApplicationTests.executor": "Run",
+    "JUnit.McUserServiceApplicationTests.shouldCreateUser.executor": "Run",
     "JUnit.McUserServiceTest.executor": "Run",
     "JUnit.McUserServiceTest.shouldAuthenticate.executor": "Run",
     "JUnit.McUserServiceTest.shouldCreateNewUser.executor": "Run",
@@ -112,6 +121,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.shann.mcuserservice" />
       <recent name="dev.shann.mcuserservice.DTO" />
     </key>
   </component>
@@ -120,9 +130,8 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser (1)">
-    <configuration name="McUserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceApplication" />
+  <component name="RunManager" selected="JUnit.McUserRepositoryTest.shouldNotAuthenticateUser">
+    <configuration name="McUserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mcUserService" />
       <extension name="coverage">
         <pattern>
@@ -130,12 +139,63 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="McUserRepositoryTest.shouldAuthenticateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mcUserService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldAuthenticateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="McUserRepositoryTest.shouldCreateNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mcUserService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldCreateNewUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="McUserRepositoryTest.shouldNotAuthenticateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mcUserService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldNotAuthenticateUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="McUserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mcuserservice" />
+      <module name="mcUserService" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dev.shann.mcuserservice.*" />
@@ -149,67 +209,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="McUserServiceTest.shouldNotBeAbleToAuthenticate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mcuserservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
-      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceTest" />
-      <option name="METHOD_NAME" value="shouldNotBeAbleToAuthenticate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="McUserServiceTest.shouldNotBeAbleToCreateNewUser (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mcUserService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
-      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceTest" />
-      <option name="METHOD_NAME" value="shouldNotBeAbleToCreateNewUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="McUserServiceTest.shouldNotBeAbleToCreateNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mcuserservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
-      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceTest" />
-      <option name="METHOD_NAME" value="shouldNotBeAbleToCreateNewUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.McUserServiceApplication" />
-      <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser (1)" />
-      <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate" />
-      <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser" />
+      <item itemvalue="JUnit.McUserRepositoryTest" />
+      <item itemvalue="JUnit.McUserRepositoryTest.shouldAuthenticateUser" />
+      <item itemvalue="JUnit.McUserRepositoryTest.shouldCreateNewUser" />
+      <item itemvalue="JUnit.McUserRepositoryTest.shouldNotAuthenticateUser" />
       <item itemvalue="JUnit.McUserServiceTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser (1)" />
-        <item itemvalue="Application.McUserServiceApplication" />
-        <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToCreateNewUser" />
-        <item itemvalue="JUnit.McUserServiceTest.shouldNotBeAbleToAuthenticate" />
+        <item itemvalue="JUnit.McUserRepositoryTest.shouldNotAuthenticateUser" />
+        <item itemvalue="JUnit.McUserRepositoryTest" />
+        <item itemvalue="JUnit.McUserRepositoryTest.shouldAuthenticateUser" />
+        <item itemvalue="JUnit.McUserRepositoryTest.shouldCreateNewUser" />
         <item itemvalue="JUnit.McUserServiceTest" />
       </list>
     </recent_temporary>
@@ -325,6 +337,16 @@
           <line>28</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserRepositoryTest.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserRepositoryTest.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceTest.java</url>
           <line>49</line>
@@ -333,6 +355,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepository.java</url>
+          <line>11</line>
+          <properties class="dev.shann.mcuserservice.repository.UserRepository" method="save">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
