@@ -21,6 +21,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 import static org.assertj.core.api.SoftAssertions.assertSoftly;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -46,11 +50,16 @@ class McUserServiceApplicationTests {
     private UserController userController;
 
     @BeforeAll
-    static void setup(){
+    static void setup() throws IOException {
         McUserServiceApplicationTests mcuserserviceApplicationTests = new McUserServiceApplicationTests();
         ClassLoader classLoader = mcuserserviceApplicationTests.getClass().getClassLoader();
         String sqlFile = "test-data.sql";
-        classLoader.getResourceAsStream(sqlFile);
+        var result  = new BufferedReader(new InputStreamReader(classLoader.getResourceAsStream(sqlFile)));
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while((line = result.readLine())!=null){
+            sb.append(line);
+        }
     }
 
     @Test
