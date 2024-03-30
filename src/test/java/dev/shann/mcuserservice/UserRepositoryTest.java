@@ -11,7 +11,7 @@ import org.springframework.test.context.TestPropertySource;
 
 @DataJpaTest
 @TestPropertySource(locations = "file:src/test/java/resources/application-test.properties")
-class McUserRepositoryTest {
+class UserRepositoryTest {
 
   @Autowired private UserRepository userRepository;
 

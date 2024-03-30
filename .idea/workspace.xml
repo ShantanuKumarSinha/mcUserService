@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/pipeline.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/pipeline.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +129,20 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.McUserServiceApplicationTests.shouldAuthenticateUser">
+  <component name="RunManager" selected="Application.McUserServiceApplication">
+    <configuration name="McUserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceApplication" />
+      <module name="mcUserService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="McUserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mcUserService" />
       <extension name="coverage">
@@ -141,22 +154,6 @@
       <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
       <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="McUserRepositoryTest.shouldAuthenticateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mcUserService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
-      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldAuthenticateUser" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -209,19 +206,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.McUserServiceApplication" />
       <item itemvalue="JUnit.McUserRepositoryTest" />
-      <item itemvalue="JUnit.McUserRepositoryTest.shouldAuthenticateUser" />
       <item itemvalue="JUnit.McUserRepositoryTest.shouldNotAuthenticateUser" />
       <item itemvalue="JUnit.McUserServiceApplicationTests" />
       <item itemvalue="JUnit.McUserServiceApplicationTests.shouldAuthenticateUser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.McUserServiceApplication" />
         <item itemvalue="JUnit.McUserServiceApplicationTests.shouldAuthenticateUser" />
         <item itemvalue="JUnit.McUserServiceApplicationTests" />
         <item itemvalue="JUnit.McUserRepositoryTest.shouldNotAuthenticateUser" />
         <item itemvalue="JUnit.McUserRepositoryTest" />
-        <item itemvalue="JUnit.McUserRepositoryTest.shouldAuthenticateUser" />
       </list>
     </recent_temporary>
   </component>

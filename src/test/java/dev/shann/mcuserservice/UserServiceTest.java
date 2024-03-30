@@ -7,7 +7,6 @@ import dev.shann.mcuserservice.exceptions.EmailNotFoundException;
 import dev.shann.mcuserservice.model.User;
 import dev.shann.mcuserservice.repository.UserRepository;
 import dev.shann.mcuserservice.service.UserService;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -23,7 +22,7 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class McUserServiceTest {
+class UserServiceTest {
 
     @InjectMocks
     UserService userService;
