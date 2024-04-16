@@ -1,10 +1,9 @@
 insert into users (
     id,
     email,
-    `password`)
+    password)
 values (
-    :1L,
-    :"test@test.com",
-    :"test@123")
+    2,
+    'test2@test.com',
+    'test2@123')
 ;
-

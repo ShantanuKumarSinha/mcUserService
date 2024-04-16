@@ -12,24 +12,21 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.SqlGroup;
+import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 import static org.assertj.core.api.SoftAssertions.assertSoftly;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-
-@SpringBootTest(classes= McUserServiceApplication.class)
+@SpringBootTest(classes = McUserServiceApplication.class)
 @AutoConfigureMockMvc
 @TestPropertySource(locations = "file:src/test/java/resources/application-test.properties")
 @ActiveProfiles("test")
@@ -49,19 +46,6 @@ class McUserServiceApplicationTests {
     @Autowired
     private UserController userController;
 
-    @BeforeAll
-    static void setup() throws IOException {
-        McUserServiceApplicationTests mcuserserviceApplicationTests = new McUserServiceApplicationTests();
-        ClassLoader classLoader = mcuserserviceApplicationTests.getClass().getClassLoader();
-        String sqlFile = "test-data.sql";
-        var result  = new BufferedReader(new InputStreamReader(classLoader.getResourceAsStream(sqlFile)));
-        StringBuilder sb = new StringBuilder();
-        String line;
-        while((line = result.readLine())!=null){
-            sb.append(line);
-        }
-    }
-
     @Test
     void shouldCreateUser() throws Exception{
         var jsonStringify = objectMapper.writeValueAsString(
@@ -80,7 +64,7 @@ class McUserServiceApplicationTests {
 
     @Test
     @SqlGroup({
-            @Sql(scripts = "classpath:test-data.sql", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
+            @Sql(scripts = "file:src/test/java/resources/test-data.sql", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
     })
     void shouldAuthenticateUser() throws Exception {
 

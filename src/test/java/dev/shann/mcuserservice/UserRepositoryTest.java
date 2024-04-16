@@ -32,8 +32,8 @@ class UserRepositoryTest {
   void shouldAuthenticateUser(){
     var user = userRepository.findByEmail("test@test.com");
     assertThat(user).isPresent();
-    assertThat(user.get()).isNotNull();
     assertThat(user.get())
+            .isNotNull()
             .extracting(UserEntity::getId, UserEntity::getEmail, UserEntity::getPassword)
             .contains(1L, "test@test.com","Test@123");
 
