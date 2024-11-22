@@ -21,6 +21,12 @@
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 		<sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../target/jacoco.exec</sonar.coverage.jacoco.xmlReportPaths>
 		<sonar.language>java</sonar.language>
+		<mysql-connector-java.version>8.0.33</mysql-connector-java.version>
+		<modelmapper.version>3.2.0</modelmapper.version>
+		<spring-cloud-starter-netflix-eureka-client.version>4.1.0</spring-cloud-starter-netflix-eureka-client.version>
+		<spring-boot-starter-actuator.version>3.2.3</spring-boot-starter-actuator.version>
+		<sonar-maven-plugin.version>3.8.0.2131</sonar-maven-plugin.version>
+		<spring-cloud-dependencies.version>2022.0.4</spring-cloud-dependencies.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -40,7 +46,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.33</version>
+			<version>${mysql-connector-java.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -55,7 +61,7 @@
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
-			<version>3.2.0</version>
+			<version>${modelmapper.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -70,13 +76,13 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-			<version>4.1.0</version>
+			<version>${spring-cloud-starter-netflix-eureka-client.version}</version>
 		</dependency>
 		<!--jacoco-maven-plugin-->
 		<dependency>
 			<groupId>org.jacoco</groupId>
 			<artifactId>jacoco-maven-plugin</artifactId>
-			<version>0.8.11</version>
+			<version>${jacoco.version}</version>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
@@ -84,7 +90,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>2022.0.4</version>
+				<version>${spring-cloud-dependencies.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -136,7 +142,7 @@
 			<plugin>
 				<groupId>org.sonarsource.scanner.maven</groupId>
 				<artifactId>sonar-maven-plugin</artifactId>
-				<version> 3.8.0.2131</version>
+				<version> ${sonar-maven-plugin.version}</version>
 			</plugin>
 
 		</plugins>
