@@ -1,9 +1,6 @@
 package dev.shann.mcuserservice.model;
 
-
 import lombok.*;
-
-
 
 @Data
 @NoArgsConstructor
