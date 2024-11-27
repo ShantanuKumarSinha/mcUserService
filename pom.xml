@@ -27,6 +27,7 @@
 		<spring-boot-starter-actuator.version>3.2.3</spring-boot-starter-actuator.version>
 		<sonar-maven-plugin.version>3.8.0.2131</sonar-maven-plugin.version>
 		<spring-cloud-dependencies.version>2022.0.4</spring-cloud-dependencies.version>
+		<maven-dependency-plugin.version>3.8.1</maven-dependency-plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -143,6 +144,24 @@
 				<groupId>org.sonarsource.scanner.maven</groupId>
 				<artifactId>sonar-maven-plugin</artifactId>
 				<version> ${sonar-maven-plugin.version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>${maven-dependency-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>generate-dependency-tree</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>tree</goal>
+						</goals>
+						<configuration>
+							<outputFile>${project.build.directory}/dependency.tree</outputFile>
+							<outputType>text</outputType> <!-- Options: 'text', 'dot', etc. -->
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 
 		</plugins>
