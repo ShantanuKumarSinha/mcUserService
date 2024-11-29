@@ -10,7 +10,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.TestPropertySource;
 
 @DataJpaTest
-@TestPropertySource(locations = "file:src/test/java/resources/application-test.properties")
+@TestPropertySource(locations = "file:src/test/resources/application-test.properties")
 class UserRepositoryTest {
 
   @Autowired private UserRepository userRepository;
