@@ -26,7 +26,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 // to execute this rename the table user to users as user is reserved keyword
 @SpringBootTest(classes = McUserServiceApplication.class)
 @AutoConfigureMockMvc
-@TestPropertySource(locations = "file:src/test/resources/application-test.properties")
+//@TestPropertySource(locations = "file:src/test/resources/application-test.properties")
+@TestPropertySource(("classpath:application-test.properties"))
 @ActiveProfiles("test")
 class McUserServiceApplicationTests {
     @Autowired
@@ -62,7 +63,8 @@ class McUserServiceApplicationTests {
 
     @Test
     @SqlGroup({
-            @Sql(scripts = "file:src/test/resources/test-data.sql", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
+            //@Sql(scripts = "file:src/test/resources/test-data.sql", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
+            @Sql(scripts = "classpath:test-data.sql", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
     })
     void shouldAuthenticateUser() throws Exception {
 
