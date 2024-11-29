@@ -53,12 +53,12 @@ dev.shann:mcUserService:jar:0.0.1-SNAPSHOT
 |  |     \- io.micrometer:micrometer-commons:jar:1.11.4:compile
 |  \- org.springframework:spring-webmvc:jar:6.0.12:compile
 |     \- org.springframework:spring-expression:jar:6.0.12:compile
-+- org.springframework.boot:spring-boot-devtools:jar:3.1.4:runtime
++- org.springframework.boot:spring-boot-devtools:jar:3.1.4:runtime (optional)
 |  +- org.springframework.boot:spring-boot:jar:3.1.4:compile
 |  \- org.springframework.boot:spring-boot-autoconfigure:jar:3.1.4:compile
 +- com.mysql:mysql-connector-j:jar:8.0.33:compile
-+- org.springframework.boot:spring-boot-configuration-processor:jar:3.1.4:compile
-+- org.projectlombok:lombok:jar:1.18.30:compile
++- org.springframework.boot:spring-boot-configuration-processor:jar:3.1.4:compile (optional)
++- org.projectlombok:lombok:jar:1.18.30:compile (optional)
 +- org.modelmapper:modelmapper:jar:3.2.0:compile
 +- org.springframework.boot:spring-boot-starter-test:jar:3.1.4:test
 |  +- org.springframework.boot:spring-boot-test:jar:3.1.4:test
