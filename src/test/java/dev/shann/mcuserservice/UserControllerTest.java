@@ -1,7 +1,8 @@
-package dev.shann.mcuserservice.controller;
+package dev.shann.mcuserservice;
 
 import dev.shann.mcuserservice.dto.AuthenticateUserDTO;
 import dev.shann.mcuserservice.dto.CreateUserDTO;
+import dev.shann.mcuserservice.controller.UserController;
 import dev.shann.mcuserservice.model.User;
 import dev.shann.mcuserservice.service.UserService;
 import org.junit.jupiter.api.Test;
