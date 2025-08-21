@@ -27,16 +27,6 @@ public class McUserServiceApplication implements WebMvcConfigurer {
         .excludePathPatterns("/actuator/**", "/v3/api-docs/**", "/swagger-ui/**");
   }
 
-        .addInterceptor(loggerInterceptor)
-        .addPathPatterns("/**")
-        .excludePathPatterns("/actuator/**", "/v3/api-docs/**", "/swagger-ui/**");
-  }
-
-  @Bean
-  public LoggerInterceptor loggerInterceptor() {
-    return new LoggerInterceptor();
-  }
-
   @Bean
   public UserService userService(UserRepository userRepository) {
     return new UserService(userRepository, new ModelMapper());
