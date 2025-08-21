@@ -509,3 +509,4 @@ build/
 .vscode/
 !/.idea/
 !/.idea/workspace.xml
+!/logs/

@@ -1,4 +1,4 @@
-insert into users (
+insert into mc_user (
     id,
     email,
     password)
