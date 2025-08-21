@@ -23,27 +23,18 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import static org.assertj.core.api.SoftAssertions.assertSoftly;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-// to execute this rename the table user to users as user is reserved keyword
 @SpringBootTest(classes = McUserServiceApplication.class)
 @AutoConfigureMockMvc
 //@TestPropertySource(locations = "file:src/test/resources/application-test.properties")
 @TestPropertySource(("classpath:application-test.properties"))
 @ActiveProfiles("test")
 class McUserServiceApplicationTests {
+
     @Autowired
     MockMvc mockMvc;
 
     @Autowired
-    private UserRepository userRepository;
-
-    @Autowired
-    UserService userService;
-
-    @Autowired
     ObjectMapper objectMapper;
-
-    @Autowired
-    private UserController userController;
 
     @Test
     void shouldCreateUser() throws Exception{
