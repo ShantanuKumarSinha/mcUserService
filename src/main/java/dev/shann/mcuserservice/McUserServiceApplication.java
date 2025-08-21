@@ -25,7 +25,6 @@ public class McUserServiceApplication implements WebMvcConfigurer {
         .addInterceptor(new LoggerInterceptor())
         .addPathPatterns("/**")
         .excludePathPatterns("/actuator/**", "/v3/api-docs/**", "/swagger-ui/**");
-    ;
   }
 
   @Bean
