@@ -1,4 +1,4 @@
-package dev.shann.mcuserservice;
+package dev.shann.mcuserservice.service;
 
 import dev.shann.mcuserservice.dto.AuthenticateUserDTO;
 import dev.shann.mcuserservice.dto.CreateUserDTO;
@@ -6,7 +6,6 @@ import dev.shann.mcuserservice.entity.UserEntity;
 import dev.shann.mcuserservice.exceptions.EmailNotFoundException;
 import dev.shann.mcuserservice.model.User;
 import dev.shann.mcuserservice.repository.UserRepository;
-import dev.shann.mcuserservice.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
