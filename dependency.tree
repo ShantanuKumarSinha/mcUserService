@@ -137,15 +137,18 @@ dev.shann:mcUserService:jar:0.0.1-SNAPSHOT
 |     +- org.springframework.boot:spring-boot-starter-cache:jar:3.1.4:compile
 |     |  \- org.springframework:spring-context-support:jar:6.0.12:compile
 |     \- com.stoyanr:evictor:jar:1.0.0:compile
-\- org.jacoco:jacoco-maven-plugin:jar:0.8.11:compile
-   +- org.codehaus.plexus:plexus-utils:jar:3.0.24:compile
-   +- org.apache.maven.shared:file-management:jar:3.1.0:compile
-   |  \- commons-io:commons-io:jar:2.11.0:compile
-   +- org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
-   |  \- org.apache.maven.doxia:doxia-sink-api:jar:1.0:compile
-   +- org.jacoco:org.jacoco.agent:jar:runtime:0.8.11:compile
-   +- org.jacoco:org.jacoco.core:jar:0.8.11:compile
-   |  +- org.ow2.asm:asm:jar:9.6:compile
-   |  +- org.ow2.asm:asm-commons:jar:9.6:compile
-   |  \- org.ow2.asm:asm-tree:jar:9.6:compile
-   \- org.jacoco:org.jacoco.report:jar:0.8.11:compile
++- org.jacoco:jacoco-maven-plugin:jar:0.8.11:compile
+|  +- org.codehaus.plexus:plexus-utils:jar:3.0.24:compile
+|  +- org.apache.maven.shared:file-management:jar:3.1.0:compile
+|  |  \- commons-io:commons-io:jar:2.11.0:compile
+|  +- org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
+|  |  \- org.apache.maven.doxia:doxia-sink-api:jar:1.0:compile
+|  +- org.jacoco:org.jacoco.agent:jar:runtime:0.8.11:compile
+|  +- org.jacoco:org.jacoco.core:jar:0.8.11:compile
+|  |  +- org.ow2.asm:asm:jar:9.6:compile
+|  |  +- org.ow2.asm:asm-commons:jar:9.6:compile
+|  |  \- org.ow2.asm:asm-tree:jar:9.6:compile
+|  \- org.jacoco:org.jacoco.report:jar:0.8.11:compile
+\- org.springframework.restdocs:spring-restdocs-mockmvc:jar:3.0.5:test
+   +- org.springframework.restdocs:spring-restdocs-core:jar:3.0.0:test
+   \- jakarta.servlet:jakarta.servlet-api:jar:6.0.0:test
