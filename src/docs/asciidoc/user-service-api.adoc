@@ -1,5 +1,5 @@
 = User Service API Documentation
-Andy Wilkinson;
+Shantanu Kumar Sinha;
 :doctype: book
 :icons: font
 :source-highlighter: highlightjs
@@ -25,4 +25,38 @@ User Service is a RESTful web service for managing user accounts. It provides en
   "name": "John Doe",
   "email": "john.doe@example.com",
   "password": "password123"
+}
+Response:
+
+201 Created: User successfully created.
+400 Bad Request: Invalid input.
+
+[[api_create_user_failure]]
+== Create User Failure
+**Endpoint**: `POST /api/v1/authenticate`
+**Description**: Authenticates an existing user.
+**Request Body**:
+```json
+{
+  "email": "john.doe@example.com",
+  "password": "password123"
+}
+
+Response:
+200 OK: Authentication successful.
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+[[api_authenticate_user_failure]]
+== Existing User Authentication Failure
+Endpoint: POST /api/v1/authenticate Description: Handles authentication failure for an existing user.
+Request Body:
+{
+  "email": "john.doe@example.com",
+  "password": "wrongpassword"
+}
+Response:
+401 Unauthorized: Authentication failed.
+{
+  "error": "Invalid credentials"
 }
