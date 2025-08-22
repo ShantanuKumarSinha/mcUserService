@@ -78,7 +78,7 @@ class McUserServiceApplicationTests {
         mockMvc
             .perform(requestBuilder)
             .andExpect(status().isConflict())
-            .andDo(document("can't-create-existing-user"))
+            .andDo(document("existing-user"))
             .andReturn();
     var responseBody = result.getResponse().getContentAsString();
     assertSoftly(softly -> softly.assertThat(responseBody).isEqualTo("User already exists"));

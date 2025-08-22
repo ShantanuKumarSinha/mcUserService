@@ -10,9 +10,10 @@ import lombok.*;
 @AllArgsConstructor
 @Builder(toBuilder = true)
 public class UserEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    String email;
-    String password;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  Long id;
+
+  String email;
+  String password;
 }

@@ -1,2 +1,13 @@
-INSERT INTO mc_user VALUES (1, 'shan.raj93@gbmail.com', 'Test@123');
-INSERT INTO mc_user VALUES (2, 'second.user@gmail.com', 'Testable@123');
+INSERT INTO mc_user (
+    email,
+    password
+) VALUES ('random.raj93@gbmail.com', 'Test@123');
+
+INSERT INTO mc_user (
+    email,
+) VALUES ('random.raj93@gbmail.com', '$2b$12$uQwQb6QwQb6QwQb6QwQb6eQb6QwQb6QwQb6QwQb6QwQb6QwQb6Qe'); -- bcrypt hash of 'Test@123'
+
+INSERT INTO mc_user (
+    email,
+    password
+) VALUES ('second-random.user@gmail.com', '$2b$12$uQwQb6QwQb6QwQb6QwQb6QeQb6QwQb6QwQb6QwQb6QwQb6QwQb6Qe'); -- bcrypt hash of 'Testable@123'
