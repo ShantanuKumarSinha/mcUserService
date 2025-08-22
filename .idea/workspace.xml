@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="(docs/springRestDoc): add spring rest doc for the project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test-data.sql" beforeDir="false" />
+    </list>
+    <list id="a7087fd2-59d7-4586-9d4c-73388b8d3102" name="ExistingUserChanges" comment="ExistingUserChanges">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/exceptions/ExistingUserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepositoryDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/config/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/config/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/exceptions/UserAlreadyExistException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/RepositoryDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/UserRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/resources/test-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/test-data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/repository/RepositoryDefinitionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/repository/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +74,6 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2VnJVzuDNvnHLlqkKRGjWLOGtFA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -84,6 +94,7 @@
     "JUnit.McUserServiceApplicationTests.executor": "Run",
     "JUnit.McUserServiceApplicationTests.shouldAuthenticateUser.executor": "Run",
     "JUnit.McUserServiceApplicationTests.shouldCreateUser.executor": "Run",
+    "JUnit.McUserServiceApplicationTests.shouldNotCreateUserIfUserAlreadyExists.executor": "Run",
     "JUnit.McUserServiceTest.executor": "Run",
     "JUnit.McUserServiceTest.shouldAuthenticate.executor": "Run",
     "JUnit.McUserServiceTest.shouldCreateNewUser.executor": "Run",
@@ -103,11 +114,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "test/createUserForExistingUser",
     "ignore.preview.features.used": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/java/dev/shann/mcuserservice",
     "last_opened_file_path": "/Users/shantanukumar/IdeaProjects/mcUserService/src/main/resources",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -135,7 +147,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.McUserServiceApplicationTests">
+  <component name="RunManager" selected="JUnit.McUserServiceApplicationTests.shouldNotCreateUserIfUserAlreadyExists">
     <configuration name="McUserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceApplication" />
       <module name="mcUserService" />
@@ -180,7 +192,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="McUserServiceApplicationTests.shouldNotCreateUserIfUserAlreadyExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mcUserService" />
       <extension name="coverage">
         <pattern>
@@ -189,8 +201,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
-      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.UserRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceApplicationTests" />
+      <option name="METHOD_NAME" value="shouldNotCreateUserIfUserAlreadyExists" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,15 +224,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="McUserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="mcUserService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="dev.shann.mcuserservice.McUserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.McUserServiceApplication" />
-      <item itemvalue="JUnit.UserRepositoryTest" />
+      <item itemvalue="JUnit.McUserServiceApplicationTests.shouldNotCreateUserIfUserAlreadyExists" />
       <item itemvalue="JUnit.UserRepositoryTest.shouldNotAuthenticateUser" />
       <item itemvalue="JUnit.McUserServiceApplicationTests" />
       <item itemvalue="JUnit.McUserServiceApplicationTests.shouldAuthenticateUser" />
+      <item itemvalue="Spring Boot.McUserServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.McUserServiceApplicationTests.shouldNotCreateUserIfUserAlreadyExists" />
         <item itemvalue="JUnit.McUserServiceApplicationTests" />
         <item itemvalue="JUnit.McUserServiceApplicationTests.shouldAuthenticateUser" />
         <item itemvalue="Application.McUserServiceApplication" />
@@ -288,16 +311,6 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/UserServiceTest.java</url>
           <line>63</line>
           <option name="timeStamp" value="15" />
@@ -306,16 +319,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/UserServiceTest.java</url>
           <line>64</line>
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/UserServiceTest.java</url>
@@ -328,11 +331,6 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/UserRepositoryTest.java</url>
           <line>26</line>
           <option name="timeStamp" value="25" />
@@ -342,6 +340,11 @@
           <line>44</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceApplicationTests.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/UserServiceTest.java</url>
           <line>49</line>
@@ -350,15 +353,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepository.java</url>
-          <line>11</line>
-          <properties class="dev.shann.mcuserservice.repository.UserRepository" method="save">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

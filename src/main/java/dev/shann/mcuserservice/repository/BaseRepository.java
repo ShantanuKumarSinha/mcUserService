@@ -6,7 +6,8 @@ import org.springframework.data.repository.NoRepositoryBean;
 import java.util.Optional;
 
 @NoRepositoryBean
-public interface BaseRepository<U, L extends Number> extends RepositoryDefinition<UserEntity, Long> {
+public interface BaseRepository<U, L extends Number>
+    extends UserRepositoryDefinition<UserEntity, Long> {
     @Override
     UserEntity save(UserEntity user);
 

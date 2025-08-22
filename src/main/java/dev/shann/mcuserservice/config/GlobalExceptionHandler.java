@@ -1,7 +1,7 @@
 package dev.shann.mcuserservice.config;
 
 import dev.shann.mcuserservice.exceptions.EmailNotFoundException;
-import dev.shann.mcuserservice.exceptions.UserAlreadyExistException;
+import dev.shann.mcuserservice.exceptions.ExistingUserException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,8 +19,14 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return handleExceptionInternal(emailNotFoundException,emailNotFoundException.getMessage(), new HttpHeaders(), HttpStatus.NOT_FOUND, webRequest);
     }
 
-    @ExceptionHandler(value = {UserAlreadyExistException.class})
-    public ResponseEntity<Object> handleUserAlreadyExistException(UserAlreadyExistException userAlreadyExistException, WebRequest webRequest){
-        return handleExceptionInternal(userAlreadyExistException,userAlreadyExistException.getMessage(), new HttpHeaders(), HttpStatus.CONFLICT, webRequest);
+  @ExceptionHandler(value = {ExistingUserException.class})
+  public ResponseEntity<Object> handleUserAlreadyExistException(
+      ExistingUserException existingUserException, WebRequest webRequest) {
+    return handleExceptionInternal(
+        existingUserException,
+        existingUserException.getMessage(),
+        new HttpHeaders(),
+        HttpStatus.CONFLICT,
+        webRequest);
     }
 }
