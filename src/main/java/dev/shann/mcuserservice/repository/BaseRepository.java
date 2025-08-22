@@ -7,10 +7,9 @@ import org.springframework.data.repository.NoRepositoryBean;
 @NoRepositoryBean
 public interface BaseRepository<U, L extends Number>
     extends UserRepositoryDefinition<UserEntity, Long> {
-    @Override
-    UserEntity save(UserEntity user);
+  @Override
+  UserEntity save(UserEntity user);
 
-    @Override
-    Optional<UserEntity> findById(Long id);
-
+  @Override
+  Optional<UserEntity> findById(Long id);
 }
