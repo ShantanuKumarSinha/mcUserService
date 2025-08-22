@@ -9,7 +9,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.TestPropertySource;
 
 @DataJpaTest
-//@TestPropertySource(locations = "file:src/test/resources/application-test.properties")
+// @TestPropertySource(locations = "file:src/test/resources/application-test.properties")
 @TestPropertySource(("classpath:application-test.properties"))
 class UserRepositoryTest {
 
@@ -22,6 +22,7 @@ class UserRepositoryTest {
     userEntity = UserEntity.builder().email("test@test.com").password("Test@123").build();
     userEntity = userRepository.save(userEntity);
   }
+
   @Test
   void shouldCreateNewUser() {
     assertThat(userEntity).isNotNull();
@@ -29,18 +30,17 @@ class UserRepositoryTest {
   }
 
   @Test
-  void shouldAuthenticateUser(){
+  void shouldAuthenticateUser() {
     var user = userRepository.findByEmail("test@test.com");
     assertThat(user).isPresent();
     assertThat(user.get())
-            .isNotNull()
-            .extracting(UserEntity::getId, UserEntity::getEmail, UserEntity::getPassword)
-            .contains(1L, "test@test.com","Test@123");
-
+        .isNotNull()
+        .extracting(UserEntity::getId, UserEntity::getEmail, UserEntity::getPassword)
+        .contains(1L, "test@test.com", "Test@123");
   }
 
   @Test
-  void shouldNotAuthenticateUser(){
+  void shouldNotAuthenticateUser() {
     var user = userRepository.findByEmail("test2@test.com");
     assertThat(user).isNotPresent();
     assertThat(user).isEmpty();
