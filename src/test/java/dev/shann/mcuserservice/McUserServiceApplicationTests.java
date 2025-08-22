@@ -62,7 +62,7 @@ class McUserServiceApplicationTests {
   @Test
   @SqlGroup({
     @Sql(
-        scripts = "classpath:test-data.sql",
+        scripts = "classpath:test-existing-user.sql",
         executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
   })
   void shouldNotCreateUserIfUserAlreadyExists() throws Exception {

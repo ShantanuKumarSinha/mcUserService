@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="(docs/springRestDoc): add spring rest doc for the project">
-      <change beforePath="$PROJECT_DIR$/src/docs/asciidoc/getting-started-guide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/asciidoc/getting-started-guide.adoc" afterDir="false" />
+    <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test-existing-user.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/pipeline.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/pipeline.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +59,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -90,6 +97,9 @@
     "JUnit.McuserserviceApplicationTests.shouldNotBeAbleToAuthenticateUser.executor": "Run",
     "JUnit.McuserserviceApplicationTests.testUserAuthentication.executor": "Run",
     "JUnit.McuserserviceApplicationTests.testUserCreation.executor": "Run",
+    "JUnit.UserRepositoryTest.executor": "Run",
+    "Maven.mcUserService [clean,install].executor": "Run",
+    "Maven.mcUserService [clean,package].executor": "Run",
     "Maven.mcuserservice [clean].executor": "Run",
     "Maven.mcuserservice [compile].executor": "Run",
     "Maven.mcuserservice [install].executor": "Run",
@@ -97,18 +107,23 @@
     "Maven.mcuserservice [org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "ref/project",
+    "git-widget-placeholder": "#43 on ShantanuKumarSinha-patch-4",
     "ignore.preview.features.used": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/java/dev/shann/mcuserservice",
-    "last_opened_file_path": "/Users/shantanukumar/IdeaProjects/mcUserService/src/main/resources",
+    "last_opened_file_path": "/Users/shantanukumar/IdeaProjects/mcUserService/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -116,6 +131,7 @@
       <recent name="dev.shann.mcuserservice.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -129,9 +145,11 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
+      <command value="mvn clean install" />
+      <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.McUserServiceApplicationTests.shouldNotCreateUserIfUserAlreadyExists">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest">
     <configuration name="McUserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.McUserServiceApplication" />
       <module name="mcUserService" />
@@ -192,18 +210,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTest.shouldNotAuthenticateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mcUserService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.shann.mcuserservice.*" />
+          <option name="PATTERN" value="dev.shann.mcuserservice.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice" />
-      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldNotAuthenticateUser" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="dev.shann.mcuserservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="dev.shann.mcuserservice.repository.UserRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -218,20 +235,29 @@
     </configuration>
     <list>
       <item itemvalue="Application.McUserServiceApplication" />
+      <item itemvalue="JUnit.UserRepositoryTest" />
       <item itemvalue="JUnit.McUserServiceApplicationTests.shouldNotCreateUserIfUserAlreadyExists" />
-      <item itemvalue="JUnit.UserRepositoryTest.shouldNotAuthenticateUser" />
       <item itemvalue="JUnit.McUserServiceApplicationTests" />
       <item itemvalue="JUnit.McUserServiceApplicationTests.shouldAuthenticateUser" />
       <item itemvalue="Spring Boot.McUserServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRepositoryTest" />
         <item itemvalue="JUnit.McUserServiceApplicationTests.shouldNotCreateUserIfUserAlreadyExists" />
         <item itemvalue="JUnit.McUserServiceApplicationTests" />
         <item itemvalue="JUnit.McUserServiceApplicationTests.shouldAuthenticateUser" />
         <item itemvalue="Application.McUserServiceApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -241,8 +267,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695465945740</updated>
+      <workItem from="1755892381675" duration="886000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ID_ORDER">
@@ -285,6 +315,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="qodana quality check" />
+    <option name="LAST_COMMIT_MESSAGE" value="qodana quality check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
