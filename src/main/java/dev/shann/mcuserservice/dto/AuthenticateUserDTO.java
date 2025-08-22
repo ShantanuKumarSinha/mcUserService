@@ -1,5 +1,3 @@
 package dev.shann.mcuserservice.dto;
 
-
-public record AuthenticateUserDTO(String email , String password) {
-}
+public record AuthenticateUserDTO(String email, String password) {}

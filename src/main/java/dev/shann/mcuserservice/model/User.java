@@ -7,7 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder(toBuilder = true)
 public class User {
-    Long id;
-    String email;
-    String password;
+  Long id;
+  String email;
+  String password;
 }

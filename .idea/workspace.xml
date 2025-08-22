@@ -6,22 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="21d475a1-4552-4ac5-80bd-29e8f134a70f" name="Changes" comment="(docs/springRestDoc): add spring rest doc for the project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list id="a7087fd2-59d7-4586-9d4c-73388b8d3102" name="ExistingUserChanges" comment="ExistingUserChanges">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/exceptions/ExistingUserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepositoryDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/config/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/config/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/exceptions/UserAlreadyExistException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/BaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/RepositoryDefinition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/shann/mcuserservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/McUserServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/controller/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/repository/RepositoryDefinitionTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/repository/UserRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/shann/mcuserservice/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +101,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "test/createUserForExistingUser",
+    "git-widget-placeholder": "main",
     "ignore.preview.features.used": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/shantanukumar/IdeaProjects/mcuserservice/src/main/java/dev/shann/mcuserservice",

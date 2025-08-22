@@ -1,9 +1,8 @@
 package dev.shann.mcuserservice.repository;
 
 import dev.shann.mcuserservice.entity.UserEntity;
-import org.springframework.data.repository.NoRepositoryBean;
-
 import java.util.Optional;
+import org.springframework.data.repository.NoRepositoryBean;
 
 @NoRepositoryBean
 public interface BaseRepository<U, L extends Number>

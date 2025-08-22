@@ -15,22 +15,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/users")
 public class UserController {
 
+  UserService userService;
 
-    UserService userService;
+  public UserController(UserService userService) {
+    this.userService = userService;
+  }
 
-    public UserController(UserService userService){
-        this.userService = userService;
-    }
+  @PostMapping("/authenticate")
+  public ResponseEntity<Boolean> authenticate(
+      @RequestBody AuthenticateUserDTO authenticateUserDTO) {
+    var userFound = userService.authenticate(authenticateUserDTO) != null;
+    return new ResponseEntity<>(userFound, HttpStatus.OK);
+  }
 
-    @PostMapping("/authenticate")
-    public ResponseEntity<Boolean> authenticate(@RequestBody AuthenticateUserDTO authenticateUserDTO){
-        var userFound = userService.authenticate(authenticateUserDTO) != null;
-        return new ResponseEntity<>(userFound,HttpStatus.OK);
-    }
-
-    @PostMapping("")
-    public ResponseEntity<User> createUser(@RequestBody CreateUserDTO createUserDTO){
-        var user = userService.createUser(createUserDTO);
-        return new ResponseEntity<>(user,HttpStatus.CREATED);
-    }
+  @PostMapping("")
+  public ResponseEntity<User> createUser(@RequestBody CreateUserDTO createUserDTO) {
+    var user = userService.createUser(createUserDTO);
+    return new ResponseEntity<>(user, HttpStatus.CREATED);
+  }
 }
