@@ -56,10 +56,10 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=mcUserService
       - name: Build with Maven cloud
-        run: mvn -B verify sonar:sonar -Dsonar.projectKey=mcProductService -Dsonar.organization=shantanukumarsinha -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONARCLOUD_TOKEN
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=mcUserService -Dsonar.organization=shantanukumarsinha -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONARCLOUD_TOKEN
         env:
           GIT_HUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
-          SONARCLOUD_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
+          SONARCLOUD_TOKEN: ${{ secrets.SONAR_CLOUD_TOKEN }}
 
 
       # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
