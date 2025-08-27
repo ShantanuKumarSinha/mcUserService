@@ -13,7 +13,7 @@ Shantanu Kumar Sinha;
 User Service is a RESTful web service for managing user accounts. It provides endpoints for creating users, authenticating them, and accessing user details. The service uses hypermedia to describe relationships between resources and enable navigation.
 
 [[api_endpoints]]
-= API Endpoints
+== API Endpoints
 
 [[api_create_user]]
 == Create User
