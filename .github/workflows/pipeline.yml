@@ -51,11 +51,15 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
-          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=mcUserService
-
+      - name: Build with Maven cloud
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=mcProductService -Dsonar.organization=shantanukumarsinha -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONARCLOUD_TOKEN
+        env:
+          GIT_HUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
+          SONARCLOUD_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
 
 
       # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
