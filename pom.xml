@@ -28,6 +28,7 @@
         <spring-cloud-dependencies.version>2022.0.4</spring-cloud-dependencies.version>
         <maven-dependency-plugin.version>3.8.1</maven-dependency-plugin.version>
         <spring-restdocs-mockmvc.version>3.0.5</spring-restdocs-mockmvc.version>
+        <sonar.organization>shantanukumarsinha</sonar.organization>
     </properties>
     <dependencies>
         <dependency>
@@ -218,9 +219,6 @@
                 <configuration>
                     <source>21</source>
                     <target>21</target>
-                    <!--                                    <compilerArgs>-->
-                    <!--                                        <arg>&#45;&#45;enable-preview</arg>-->
-                    <!--                                    </compilerArgs>-->
                 </configuration>
             </plugin>
 
