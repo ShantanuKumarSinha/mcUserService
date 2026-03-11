@@ -99,9 +99,6 @@ dev.shann:mcUserService:jar:0.0.1-SNAPSHOT
 |  |        +- org.bouncycastle:bcprov-jdk18on:jar:1.73:compile
 |  |        \- org.bouncycastle:bcutil-jdk18on:jar:1.73:compile
 |  +- org.springframework.cloud:spring-cloud-netflix-eureka-client:jar:4.0.3:compile
-|  |  \- org.apache.httpcomponents.client5:httpclient5:jar:5.2.1:compile
-|  |     +- org.apache.httpcomponents.core5:httpcore5:jar:5.2.2:compile
-|  |     \- org.apache.httpcomponents.core5:httpcore5-h2:jar:5.2.2:compile
 |  +- com.netflix.eureka:eureka-client:jar:2.0.1:compile
 |  |  +- com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0:compile
 |  |  |  +- com.netflix.netflix-commons:netflix-infix:jar:0.3.0:runtime
@@ -149,6 +146,12 @@ dev.shann:mcUserService:jar:0.0.1-SNAPSHOT
 |  |  +- org.ow2.asm:asm-commons:jar:9.6:compile
 |  |  \- org.ow2.asm:asm-tree:jar:9.6:compile
 |  \- org.jacoco:org.jacoco.report:jar:0.8.11:compile
-\- org.springframework.restdocs:spring-restdocs-mockmvc:jar:3.0.5:test
-   +- org.springframework.restdocs:spring-restdocs-core:jar:3.0.0:test
-   \- jakarta.servlet:jakarta.servlet-api:jar:6.0.0:test
++- org.springframework.restdocs:spring-restdocs-mockmvc:jar:3.0.5:test
+|  +- org.springframework.restdocs:spring-restdocs-core:jar:3.0.0:test
+|  \- jakarta.servlet:jakarta.servlet-api:jar:6.0.0:test
+\- org.springframework.cloud:spring-cloud-starter-vault-config:jar:4.0.1:compile
+   +- org.apache.httpcomponents.client5:httpclient5:jar:5.2.1:compile
+   |  \- org.apache.httpcomponents.core5:httpcore5-h2:jar:5.2.2:compile
+   +- org.apache.httpcomponents.core5:httpcore5:jar:5.2.2:compile
+   +- org.springframework.cloud:spring-cloud-vault-config:jar:4.0.1:compile
+   \- org.springframework.vault:spring-vault-core:jar:3.0.2:compile
