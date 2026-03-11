@@ -58,5 +58,5 @@ Key                           Value
 ---                           -----
 
 <br/>
-spring.datasource.password    Testing@123 <br/>
+spring.datasource.password    <your-db-password> <br/>
 spring.datasource.username    root
