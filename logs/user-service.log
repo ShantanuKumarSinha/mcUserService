@@ -1,0 +1,222 @@
+2026-04-07T02:14:37.558Z  INFO 5591 --- [user-service] [main] d.s.m.McUserServiceApplicationTests      : Starting McUserServiceApplicationTests using Java 17.0.18 with PID 5591 (started by runner in /home/runner/work/mcUserService/mcUserService)
+2026-04-07T02:14:37.560Z  INFO 5591 --- [user-service] [main] d.s.m.McUserServiceApplicationTests      : The following 1 profile is active: "test"
+2026-04-07T02:14:38.646Z  INFO 5591 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-07T02:14:38.823Z  INFO 5591 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 158 ms. Found 2 JPA repository interfaces.
+2026-04-07T02:14:39.152Z  INFO 5591 --- [user-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3e082947-cd7a-397b-abb2-908df77e533e
+2026-04-07T02:14:39.516Z  INFO 5591 --- [user-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-07T02:14:39.582Z  INFO 5591 --- [user-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-04-07T02:14:39.624Z  INFO 5591 --- [user-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-07T02:14:39.789Z  INFO 5591 --- [user-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-07T02:14:39.825Z  INFO 5591 --- [user-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-07T02:14:40.153Z  INFO 5591 --- [user-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:mcuser user=ROOT
+2026-04-07T02:14:40.156Z  INFO 5591 --- [user-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-07T02:14:40.202Z  WARN 5591 --- [user-service] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-07T02:14:40.231Z  INFO 5591 --- [user-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-07T02:14:41.079Z  INFO 5591 --- [user-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-07T02:14:41.193Z  INFO 5591 --- [user-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07T02:14:41.818Z  WARN 5591 --- [user-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-07T02:14:42.266Z  INFO 5591 --- [user-service] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mcuser'
+2026-04-07T02:14:42.392Z  INFO 5591 --- [user-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-07T02:14:42.393Z  INFO 5591 --- [user-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-07T02:14:42.395Z  INFO 5591 --- [user-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-04-07T02:14:42.429Z  INFO 5591 --- [user-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-04-07T02:14:42.473Z  WARN 5591 --- [user-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-07T02:14:42.498Z  INFO 5591 --- [user-service] [main] d.s.m.McUserServiceApplicationTests      : Started McUserServiceApplicationTests in 5.722 seconds (process running for 12.608)
+2026-04-07T02:14:42.618Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users/authenticate
+2026-04-07T02:14:42.619Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:14:42.988Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Handler: org.springframework.web.method.HandlerMethod
+2026-04-07T02:14:42.989Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Response Status: 200
+2026-04-07T02:14:42.989Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: 370 ms
+2026-04-07T02:14:43.025Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users/authenticate
+2026-04-07T02:14:43.025Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:14:43.033Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: -36 ms
+2026-04-07T02:14:43.054Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users
+2026-04-07T02:14:43.054Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:14:43.063Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: -66 ms
+2026-04-07T02:14:43.076Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users
+2026-04-07T02:14:43.077Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:14:43.162Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Handler: org.springframework.web.method.HandlerMethod
+2026-04-07T02:14:43.162Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Response Status: 201
+2026-04-07T02:14:43.162Z  INFO 5591 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: 85 ms
+2026-04-07T02:14:43.209Z  INFO 5591 --- [user-service] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration dev.shann.mcuserservice.McUserServiceApplication for test class dev.shann.mcuserservice.repository.UserRepositoryTest
+2026-04-07T02:14:43.213Z  INFO 5591 --- [user-service] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2026-04-07T02:14:43.311Z  INFO 5591 --- [user-service] [main] d.s.m.repository.UserRepositoryTest      : Starting UserRepositoryTest using Java 17.0.18 with PID 5591 (started by runner in /home/runner/work/mcUserService/mcUserService)
+2026-04-07T02:14:43.312Z  INFO 5591 --- [user-service] [main] d.s.m.repository.UserRepositoryTest      : No active profile set, falling back to 1 default profile: "default"
+2026-04-07T02:14:43.405Z  INFO 5591 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-07T02:14:43.418Z  INFO 5591 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2026-04-07T02:14:43.435Z  INFO 5591 --- [user-service] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-04-07T02:14:43.460Z  INFO 5591 --- [user-service] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:b03e556c-d16e-4699-9bff-da2e40743b89;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-04-07T02:14:43.488Z  INFO 5591 --- [user-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-07T02:14:43.492Z  INFO 5591 --- [user-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-07T02:14:43.505Z  INFO 5591 --- [user-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-07T02:14:43.507Z  WARN 5591 --- [user-service] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-07T02:14:43.508Z  INFO 5591 --- [user-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@434d7e06']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-07T02:14:43.559Z  INFO 5591 --- [user-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-07T02:14:43.564Z  INFO 5591 --- [user-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07T02:14:43.624Z  INFO 5591 --- [user-service] [main] d.s.m.repository.UserRepositoryTest      : Started UserRepositoryTest in 0.411 seconds (process running for 13.734)
+2026-04-07T02:14:43.917Z  INFO 5591 --- [user-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07T02:14:43.919Z  INFO 5591 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-07T02:14:43.922Z  INFO 5591 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-07T02:14:43.923Z  INFO 5591 --- [user-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07T02:15:48.158Z  INFO 5762 --- [user-service] [main] d.s.m.McUserServiceApplicationTests      : Starting McUserServiceApplicationTests using Java 17.0.18 with PID 5762 (started by runner in /home/runner/work/mcUserService/mcUserService)
+2026-04-07T02:15:48.161Z  INFO 5762 --- [user-service] [main] d.s.m.McUserServiceApplicationTests      : The following 1 profile is active: "test"
+2026-04-07T02:15:49.300Z  INFO 5762 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-07T02:15:49.500Z  INFO 5762 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 184 ms. Found 2 JPA repository interfaces.
+2026-04-07T02:15:49.818Z  INFO 5762 --- [user-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3e082947-cd7a-397b-abb2-908df77e533e
+2026-04-07T02:15:50.233Z  INFO 5762 --- [user-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-07T02:15:50.311Z  INFO 5762 --- [user-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-04-07T02:15:50.356Z  INFO 5762 --- [user-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-07T02:15:50.534Z  INFO 5762 --- [user-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-07T02:15:50.576Z  INFO 5762 --- [user-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-07T02:15:51.060Z  INFO 5762 --- [user-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:mcuser user=ROOT
+2026-04-07T02:15:51.063Z  INFO 5762 --- [user-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-07T02:15:51.108Z  WARN 5762 --- [user-service] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-07T02:15:51.144Z  INFO 5762 --- [user-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-07T02:15:52.062Z  INFO 5762 --- [user-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-07T02:15:52.158Z  INFO 5762 --- [user-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07T02:15:52.690Z  WARN 5762 --- [user-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-07T02:15:53.168Z  INFO 5762 --- [user-service] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mcuser'
+2026-04-07T02:15:53.289Z  INFO 5762 --- [user-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-07T02:15:53.290Z  INFO 5762 --- [user-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-07T02:15:53.292Z  INFO 5762 --- [user-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-04-07T02:15:53.340Z  INFO 5762 --- [user-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-04-07T02:15:53.403Z  WARN 5762 --- [user-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-07T02:15:53.434Z  INFO 5762 --- [user-service] [main] d.s.m.McUserServiceApplicationTests      : Started McUserServiceApplicationTests in 6.103 seconds (process running for 10.647)
+2026-04-07T02:15:53.575Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users/authenticate
+2026-04-07T02:15:53.576Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:15:53.919Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Handler: org.springframework.web.method.HandlerMethod
+2026-04-07T02:15:53.920Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Response Status: 200
+2026-04-07T02:15:53.920Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: 344 ms
+2026-04-07T02:15:54.255Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users/authenticate
+2026-04-07T02:15:54.256Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:15:54.264Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: -336 ms
+2026-04-07T02:15:54.615Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users
+2026-04-07T02:15:54.616Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:15:54.624Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: -696 ms
+2026-04-07T02:15:54.638Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users
+2026-04-07T02:15:54.639Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:15:54.694Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Handler: org.springframework.web.method.HandlerMethod
+2026-04-07T02:15:54.694Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Response Status: 201
+2026-04-07T02:15:54.695Z  INFO 5762 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: 54 ms
+2026-04-07T02:15:55.220Z  INFO 5762 --- [user-service] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration dev.shann.mcuserservice.McUserServiceApplication for test class dev.shann.mcuserservice.repository.UserRepositoryTest
+2026-04-07T02:15:55.224Z  INFO 5762 --- [user-service] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2026-04-07T02:15:55.285Z  INFO 5762 --- [user-service] [main] d.s.m.repository.UserRepositoryTest      : Starting UserRepositoryTest using Java 17.0.18 with PID 5762 (started by runner in /home/runner/work/mcUserService/mcUserService)
+2026-04-07T02:15:55.286Z  INFO 5762 --- [user-service] [main] d.s.m.repository.UserRepositoryTest      : No active profile set, falling back to 1 default profile: "default"
+2026-04-07T02:15:55.359Z  INFO 5762 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-07T02:15:55.371Z  INFO 5762 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2026-04-07T02:15:55.385Z  INFO 5762 --- [user-service] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-04-07T02:15:55.405Z  INFO 5762 --- [user-service] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:543baab7-8986-4c55-afaf-05ae0486e48e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-04-07T02:15:55.426Z  INFO 5762 --- [user-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-07T02:15:55.428Z  INFO 5762 --- [user-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-07T02:15:55.439Z  INFO 5762 --- [user-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-07T02:15:55.441Z  WARN 5762 --- [user-service] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-07T02:15:55.442Z  INFO 5762 --- [user-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@2563e49e']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-07T02:15:55.474Z  INFO 5762 --- [user-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-07T02:15:55.479Z  INFO 5762 --- [user-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07T02:15:55.531Z  INFO 5762 --- [user-service] [main] d.s.m.repository.UserRepositoryTest      : Started UserRepositoryTest in 0.307 seconds (process running for 12.744)
+2026-04-07T02:15:55.777Z  INFO 5762 --- [user-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07T02:15:55.779Z  INFO 5762 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-07T02:15:55.783Z  INFO 5762 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-07T02:15:55.783Z  INFO 5762 --- [user-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07T02:16:10.268Z  INFO 5909 --- [user-service] [main] d.s.m.McUserServiceApplicationTests      : Starting McUserServiceApplicationTests using Java 17.0.18 with PID 5909 (started by runner in /home/runner/work/mcUserService/mcUserService)
+2026-04-07T02:16:10.270Z  INFO 5909 --- [user-service] [main] d.s.m.McUserServiceApplicationTests      : The following 1 profile is active: "test"
+2026-04-07T02:16:11.351Z  INFO 5909 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-07T02:16:11.589Z  INFO 5909 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 216 ms. Found 2 JPA repository interfaces.
+2026-04-07T02:16:11.961Z  INFO 5909 --- [user-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3e082947-cd7a-397b-abb2-908df77e533e
+2026-04-07T02:16:12.328Z  INFO 5909 --- [user-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-07T02:16:12.395Z  INFO 5909 --- [user-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-04-07T02:16:12.437Z  INFO 5909 --- [user-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-07T02:16:12.606Z  INFO 5909 --- [user-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-07T02:16:12.643Z  INFO 5909 --- [user-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-07T02:16:12.993Z  INFO 5909 --- [user-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:mcuser user=ROOT
+2026-04-07T02:16:12.996Z  INFO 5909 --- [user-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-07T02:16:13.029Z  WARN 5909 --- [user-service] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-07T02:16:13.059Z  INFO 5909 --- [user-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-07T02:16:13.984Z  INFO 5909 --- [user-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-07T02:16:14.106Z  INFO 5909 --- [user-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07T02:16:14.754Z  WARN 5909 --- [user-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-07T02:16:15.235Z  INFO 5909 --- [user-service] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:mcuser'
+2026-04-07T02:16:15.371Z  INFO 5909 --- [user-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-07T02:16:15.371Z  INFO 5909 --- [user-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-07T02:16:15.373Z  INFO 5909 --- [user-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-04-07T02:16:15.411Z  INFO 5909 --- [user-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-04-07T02:16:15.457Z  WARN 5909 --- [user-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-07T02:16:15.482Z  INFO 5909 --- [user-service] [main] d.s.m.McUserServiceApplicationTests      : Started McUserServiceApplicationTests in 5.942 seconds (process running for 10.941)
+2026-04-07T02:16:15.616Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users/authenticate
+2026-04-07T02:16:15.618Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:16:15.978Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Handler: org.springframework.web.method.HandlerMethod
+2026-04-07T02:16:15.978Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Response Status: 200
+2026-04-07T02:16:15.978Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: 360 ms
+2026-04-07T02:16:16.327Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users/authenticate
+2026-04-07T02:16:16.327Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:16:16.335Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: -349 ms
+2026-04-07T02:16:16.711Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users
+2026-04-07T02:16:16.712Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:16:16.721Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: -734 ms
+2026-04-07T02:16:16.738Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request URL: http://localhost:8080/users
+2026-04-07T02:16:16.738Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : HTTP Method: POST
+2026-04-07T02:16:16.806Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Handler: org.springframework.web.method.HandlerMethod
+2026-04-07T02:16:16.807Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Response Status: 201
+2026-04-07T02:16:16.807Z  INFO 5909 --- [user-service] [main] d.s.m.interceptors.LoggerInterceptor     : Request Processing Time: 69 ms
+2026-04-07T02:16:17.402Z  INFO 5909 --- [user-service] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration dev.shann.mcuserservice.McUserServiceApplication for test class dev.shann.mcuserservice.repository.UserRepositoryTest
+2026-04-07T02:16:17.406Z  INFO 5909 --- [user-service] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2026-04-07T02:16:17.476Z  INFO 5909 --- [user-service] [main] d.s.m.repository.UserRepositoryTest      : Starting UserRepositoryTest using Java 17.0.18 with PID 5909 (started by runner in /home/runner/work/mcUserService/mcUserService)
+2026-04-07T02:16:17.477Z  INFO 5909 --- [user-service] [main] d.s.m.repository.UserRepositoryTest      : No active profile set, falling back to 1 default profile: "default"
+2026-04-07T02:16:17.566Z  INFO 5909 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-07T02:16:17.579Z  INFO 5909 --- [user-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2026-04-07T02:16:17.596Z  INFO 5909 --- [user-service] [main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2026-04-07T02:16:17.619Z  INFO 5909 --- [user-service] [main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:3dabb8a4-b53b-4bef-8542-c77b9ba72d7a;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-04-07T02:16:17.646Z  INFO 5909 --- [user-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-07T02:16:17.649Z  INFO 5909 --- [user-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-07T02:16:17.661Z  INFO 5909 --- [user-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-07T02:16:17.663Z  WARN 5909 --- [user-service] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-07T02:16:17.664Z  INFO 5909 --- [user-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@1afdc3f4']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-07T02:16:17.701Z  INFO 5909 --- [user-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-07T02:16:17.706Z  INFO 5909 --- [user-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07T02:16:17.773Z  INFO 5909 --- [user-service] [main] d.s.m.repository.UserRepositoryTest      : Started UserRepositoryTest in 0.367 seconds (process running for 13.233)
+2026-04-07T02:16:18.064Z  INFO 5909 --- [user-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07T02:16:18.066Z  INFO 5909 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-07T02:16:18.069Z  INFO 5909 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-07T02:16:18.071Z  INFO 5909 --- [user-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

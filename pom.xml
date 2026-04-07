@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.4</version>
+        <version>3.4.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>dev.shann</groupId>
@@ -14,19 +14,19 @@
     <name>mcUserService</name>
     <description>Demo project for Spring Boot</description>
     <properties>
-        <jacoco.version>0.8.11</jacoco.version>
+        <jacoco.version>0.8.14</jacoco.version>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../target/jacoco.exec
         </sonar.coverage.jacoco.xmlReportPaths>
         <sonar.language>java</sonar.language>
-        <mysql-connector-java.version>8.0.33</mysql-connector-java.version>
-        <modelmapper.version>3.2.0</modelmapper.version>
-        <spring-cloud-starter-netflix-eureka-client.version>4.1.0</spring-cloud-starter-netflix-eureka-client.version>
-        <spring-boot-starter-actuator.version>3.2.3</spring-boot-starter-actuator.version>
-        <sonar-maven-plugin.version>3.8.0.2131</sonar-maven-plugin.version>
-        <spring-cloud-dependencies.version>2022.0.4</spring-cloud-dependencies.version>
-        <maven-dependency-plugin.version>3.8.1</maven-dependency-plugin.version>
+        <mysql-connector-j.version>9.2.0</mysql-connector-j.version>
+        <modelmapper.version>3.2.6</modelmapper.version>
+        <spring-cloud-starter-netflix-eureka-client.version>4.2.1</spring-cloud-starter-netflix-eureka-client.version>
+        <spring-boot-starter-actuator.version>3.4.4</spring-boot-starter-actuator.version>
+        <sonar-maven-plugin.version>5.5.0.6356</sonar-maven-plugin.version>
+        <spring-cloud-dependencies.version>2024.0.1</spring-cloud-dependencies.version>
+        <maven-dependency-plugin.version>3.10.0</maven-dependency-plugin.version>
         <spring-restdocs-mockmvc.version>3.0.5</spring-restdocs-mockmvc.version>
         <sonar.organization>shantanukumarsinha</sonar.organization>
     </properties>
@@ -46,9 +46,9 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql-connector-java.version}</version>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>${mysql-connector-j.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -168,7 +168,7 @@
             <plugin>
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
-                <version>2.2.1</version>
+                <version>2.2.6</version>
                 <executions>
                     <execution>
                         <id>generate-docs</id>
@@ -219,7 +219,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
+                <version>3.15.0</version>
                 <configuration>
                     <source>21</source>
                     <target>21</target>
