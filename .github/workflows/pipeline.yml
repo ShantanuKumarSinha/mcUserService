@@ -58,7 +58,7 @@ jobs:
       - name: Build and analyze
         env:
             SONAR_TOKEN: ${{ secrets.SONAR_CLOUD_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=mcUserService
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=mcUserService -Dsonar.organization=shantanukumarsinha -Dsonar.host.url=https://sonarcloud.io
 
       # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
       - name: Update dependency graph
